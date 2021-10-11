@@ -83,20 +83,20 @@ public class KELOMPOK6 {
         Bola bola = new Bola();
         
         Scanner sken = new Scanner(System.in);
-        System.out.println("Masukkan pilihan");
-        System.out.println("BANGUN 2D");
-        System.out.println("1.Persegi");
-        System.out.println("2.Persegi Panjang");
-        System.out.println("3.Segitiga");
-        System.out.println("4.Lingkaran");
-        System.out.println("BANGUN 3D");
-        System.out.println("5.Kubus");
-        System.out.println("6.balok");
-        System.out.println("7.tabung");
-        System.out.println("8.bola");
-        System.out.println("9.limas segitiga");
-        System.out.println("10.limas persegi");
-        System.out.println("11.prisma");
+        System.out.println("Masukkan pilihan"); //menampilkan di outputnya
+        System.out.println("BANGUN 2D");//menampilkan di outputnya
+        System.out.println("1.Persegi");//menampilkan di outputnya
+        System.out.println("2.Persegi Panjang");//menampilkan di outputnya
+        System.out.println("3.Segitiga");//menampilkan di outputnya
+        System.out.println("4.Lingkaran");//menampilkan di outputnya
+        System.out.println("BANGUN 3D");//menampilkan di outputnya
+        System.out.println("5.Kubus");//menampilkan di outputnya
+        System.out.println("6.balok");//menampilkan di outputnya
+        System.out.println("7.tabung");//menampilkan di outputnya
+        System.out.println("8.bola");//menampilkan di outputnya
+        System.out.println("9.limas segitiga");//menampilkan di outputnya
+        System.out.println("10.limas persegi");//menampilkan di outputnya
+        System.out.println("11.prisma");//menampilkan di outputnya
         
         int pilih = sken.nextInt();
         switch(pilih){

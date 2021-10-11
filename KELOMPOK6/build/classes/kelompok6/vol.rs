@@ -1,0 +1,9 @@
+kelompok6.PrismaSegi
+kelompok6.Tabung
+kelompok6.Bola
+kelompok6.Kubus
+kelompok6.main
+kelompok6.Balok
+kelompok6.LimasSegitig
+kelompok6.LimasPersegi
+kelompok6.volu

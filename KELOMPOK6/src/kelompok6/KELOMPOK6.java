@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Ardn
  */
-class Luas2d{ // coba
+class Luas2d{ // coba coba
     int tinggi = 0;
     int panjang = 0;
     int lebar = 0;

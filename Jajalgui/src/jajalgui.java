@@ -82,6 +82,7 @@ public class jajalgui extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jButton1.setText("Hitung 2D");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,6 +90,7 @@ public class jajalgui extends javax.swing.JFrame {
             }
         });
 
+        jRadioButtonPersegi.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jRadioButtonPersegi.setText("Persegi");
         jRadioButtonPersegi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,6 +98,7 @@ public class jajalgui extends javax.swing.JFrame {
             }
         });
 
+        jRadioSegitiga.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jRadioSegitiga.setText("Segitiga");
         jRadioSegitiga.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -127,6 +130,7 @@ public class jajalgui extends javax.swing.JFrame {
             }
         });
 
+        jRadioButtonJajar.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jRadioButtonJajar.setText("Jajar Genjang");
         jRadioButtonJajar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,6 +138,7 @@ public class jajalgui extends javax.swing.JFrame {
             }
         });
 
+        jRadioButtonLingkaran.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jRadioButtonLingkaran.setText("Lingkaran");
         jRadioButtonLingkaran.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,8 +155,10 @@ public class jajalgui extends javax.swing.JFrame {
         jJari.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jJari.setText("Jari2");
 
+        jHasilLuas.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jHasilLuas.setText("Luas");
 
+        jHasilKeliling.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jHasilKeliling.setText("Keliling");
 
         jTextJari.addActionListener(new java.awt.event.ActionListener() {
@@ -209,7 +216,7 @@ public class jajalgui extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jHasilKeliling)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
                                 .addComponent(jTextHasilKel, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jHasilLuas)

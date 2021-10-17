@@ -28,9 +28,9 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jPanjang" min="-2" max="-2" attributes="0"/>
                   <Component id="jLebar" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTinggi" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="Tinggi" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="jAlas" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jJari" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="Jari" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="jJari1" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="jDiagonal" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="jSisi" min="-2" max="-2" attributes="0"/>
@@ -188,7 +188,7 @@
                                       <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jTextTinggi" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jTinggi" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="Tinggi" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -238,7 +238,7 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jTextJari" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jJari" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Jari" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Balok" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="HasilLuasper" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="HasilLp" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -342,7 +342,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextSiMirActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jTinggi">
+    <Component class="javax.swing.JLabel" name="Tinggi">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -390,7 +390,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextJariActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jJari">
+    <Component class="javax.swing.JLabel" name="Jari">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>

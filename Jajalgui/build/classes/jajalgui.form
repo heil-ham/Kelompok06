@@ -32,16 +32,17 @@
                   <Component id="jAlas" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="jJari" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="jJari1" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jJari2" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jJari3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jDiagonal" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jSisi" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jTextJari" min="-2" pref="114" max="-2" attributes="0"/>
+                          <Component id="jTextTinggi" min="-2" pref="114" max="-2" attributes="0"/>
                           <Component id="jTextPanjang" min="-2" pref="114" max="-2" attributes="0"/>
                           <Component id="jTextLebar" alignment="0" min="-2" pref="114" max="-2" attributes="0"/>
+                          <Component id="jTextSiMir" min="-2" pref="114" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
@@ -58,12 +59,7 @@
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="-2" pref="183" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jRadioButtonJajar" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButtonPersegi1" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace pref="47" max="32767" attributes="0"/>
+                              <EmptySpace min="183" pref="329" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="jHasilKeliling" min="-2" max="-2" attributes="0"/>
@@ -94,8 +90,8 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTextJari2" min="-2" pref="114" max="-2" attributes="0"/>
-                                  <Component id="jTextJari1" min="-2" pref="114" max="-2" attributes="0"/>
+                                  <Component id="jTextDiagonal" min="-2" pref="114" max="-2" attributes="0"/>
+                                  <Component id="jTextSisi" min="-2" pref="114" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
                               <Component id="jPanjang1" min="-2" pref="185" max="-2" attributes="0"/>
@@ -107,8 +103,7 @@
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jTextAlas" alignment="0" min="-2" pref="114" max="-2" attributes="0"/>
-                                  <Component id="jTextSisiMir" alignment="0" min="-2" pref="114" max="-2" attributes="0"/>
-                                  <Component id="jTextTinggi" alignment="0" min="-2" pref="114" max="-2" attributes="0"/>
+                                  <Component id="jTextJari" alignment="0" min="-2" pref="114" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -123,6 +118,11 @@
                                   <Component id="jRadioButtonPersegi" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jRadioButtonLingkaran" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jButton2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jRadioButtonPersegiPanjang" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jRadioButtonJajar" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -145,62 +145,61 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jPanjang" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jTextPanjang" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="3" attributes="0">
+                                                  <Component id="jLebar" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jTextLebar" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jRadioSegitiga" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jRadioButtonPersegi" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jRadioButtonLingkaran" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jJari1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jTextSiMir" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jTextTinggi" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jTinggi" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jPanjang3" min="-2" pref="31" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                               <Component id="jRadioButtonJajar" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jRadioButtonPersegi1" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jPanjang" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextPanjang" alignment="1" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="jLebar" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jTextLebar" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jRadioSegitiga" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jRadioButtonPersegi" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jRadioButtonLingkaran" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-                              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                                      <Component id="jJari1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jTextTinggi" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextJari" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTinggi" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jRadioButtonPersegiPanjang" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -219,14 +218,14 @@
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTextJari2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jJari2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextDiagonal" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jDiagonal" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="7" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jPanjang1" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                  <Component id="jTextJari1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jJari3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextSisi" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jSisi" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -238,7 +237,7 @@
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTextSisiMir" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextJari" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jJari" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jRadioButton2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTextHasilLuas2" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -338,9 +337,9 @@
         <Property name="text" type="java.lang.String" value="Lebar"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextTinggi">
+    <Component class="javax.swing.JTextField" name="jTextSiMir">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextTinggiActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextSiMirActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jTinggi">
@@ -386,9 +385,9 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButtonLingkaranActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextSisiMir">
+    <Component class="javax.swing.JTextField" name="jTextJari">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextSisiMirActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextJariActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jJari">
@@ -406,6 +405,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Luas"/>
       </Properties>
+      <Events>
+        <EventHandler event="ancestorAdded" listener="javax.swing.event.AncestorListener" parameters="javax.swing.event.AncestorEvent" handler="jHasilLuasAncestorAdded"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jHasilKeliling">
       <Properties>
@@ -417,9 +419,9 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTextHasilKel">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextJari">
+    <Component class="javax.swing.JTextField" name="jTextTinggi">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextJariActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextTinggiActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jJari1">
@@ -447,7 +449,7 @@
         <Property name="text" type="java.lang.String" value="Perhitungan Bangun Ruang"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jJari2">
+    <Component class="javax.swing.JLabel" name="jDiagonal">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -455,22 +457,25 @@
         <Property name="text" type="java.lang.String" value="Diagonal"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jJari3">
+    <Component class="javax.swing.JLabel" name="jSisi">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Sisi"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTextJari1">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextJari1ActionPerformed"/>
+        <EventHandler event="ancestorAdded" listener="javax.swing.event.AncestorListener" parameters="javax.swing.event.AncestorEvent" handler="jSisiAncestorAdded"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextJari2">
+    <Component class="javax.swing.JTextField" name="jTextSisi">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextJari2ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextSisiActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextDiagonal">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextDiagonalActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jPanjang3">
@@ -538,17 +543,6 @@
         <Property name="text" type="java.lang.String" value="Limas Segitiga"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButtonPersegi1">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="12" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Persegi Panjang"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButtonPersegi1ActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -580,6 +574,17 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Luas Permukaan"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="jRadioButtonPersegiPanjang">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Times New Roman" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Persegi Panjang"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButtonPersegiPanjangActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

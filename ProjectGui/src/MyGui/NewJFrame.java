@@ -11,7 +11,7 @@ package MyGui;
  */
 class bangunDua {
     public float rumus(float a,float b){
-    return a*b;
+    return (a*b);
     }
     
 }
@@ -48,12 +48,6 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jTextPanjang = new javax.swing.JTextField();
         jTextLebar = new javax.swing.JTextField();
-        jTextTinggi = new javax.swing.JTextField();
-        jTextMiring = new javax.swing.JTextField();
-        jTextDiagonal = new javax.swing.JTextField();
-        jTextSisi = new javax.swing.JTextField();
-        jTextAlas = new javax.swing.JTextField();
-        jTextJari = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jPersegi = new javax.swing.JRadioButton();
         jSegitiga = new javax.swing.JRadioButton();
@@ -139,13 +133,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(jLabel6))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextJari, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
-                    .addComponent(jTextAlas)
-                    .addComponent(jTextSisi)
-                    .addComponent(jTextDiagonal)
-                    .addComponent(jTextMiring)
-                    .addComponent(jTextTinggi)
-                    .addComponent(jTextLebar)
+                    .addComponent(jTextLebar, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
                     .addComponent(jTextPanjang))
                 .addGap(17, 17, 17))
         );
@@ -161,30 +149,18 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(jTextLebar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextTinggi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addComponent(jTextMiring, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(12, 12, 12)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addComponent(jTextDiagonal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabel3)
+                .addGap(38, 38, 38)
+                .addComponent(jLabel4)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addComponent(jTextSisi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel8)
-                    .addComponent(jTextAlas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
-                    .addComponent(jTextJari, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jLabel7)
+                .addGap(24, 24, 24)
+                .addComponent(jLabel5)
+                .addGap(24, 24, 24)
+                .addComponent(jLabel8)
+                .addGap(24, 24, 24)
+                .addComponent(jLabel6)
+                .addContainerGap(67, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(102, 0, 153));
@@ -388,23 +364,23 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
-        String panjang =jTextPanjang.getText();
-        String lebar = jTextLebar.getText();
-        float Panjang = Integer.parseInt(panjang);
-        float Lebar = Integer.parseInt(lebar);
-        
+        float panjang,lebar,hasil,jari,alas;
+        panjang = Float.valueOf(jTextPanjang.getText());
+        lebar = Float.valueOf(jTextLebar.getText());
+
         float tinggi = Float.valueOf(jTextTinggi.getText());
         float miring = Float.valueOf(jTextMiring.getText());
         float sisi = Float.valueOf(jTextSisi.getText());
         float diagonal = Float.valueOf(jTextDiagonal.getText());
-        float alas = Float.valueOf(jTextAlas.getText());
-        float jari = Float.valueOf(jTextJari.getText());
+        alas = Float.valueOf(jTextAlas.getText());
+        jari = Float.valueOf(jTextJari.getText());
         
         bangunDua BangunDua = new bangunDua();
         
         
         if (jPersegi.isSelected()==true) {
-            jLuas.setText(Float.toString(BangunDua.rumus(Panjang, Lebar)));
+            hasil = BangunDua.rumus(panjang, lebar);
+            jLuas.setText(String.valueOf(hasil));
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -486,14 +462,8 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JRadioButton jSegitiga;
     private javax.swing.JRadioButton jTabung;
-    private javax.swing.JTextField jTextAlas;
-    private javax.swing.JTextField jTextDiagonal;
-    private javax.swing.JTextField jTextJari;
     private javax.swing.JTextField jTextLebar;
-    private javax.swing.JTextField jTextMiring;
     private javax.swing.JTextField jTextPanjang;
-    private javax.swing.JTextField jTextSisi;
-    private javax.swing.JTextField jTextTinggi;
     private javax.swing.JTextField jVolume;
     // End of variables declaration//GEN-END:variables
 }

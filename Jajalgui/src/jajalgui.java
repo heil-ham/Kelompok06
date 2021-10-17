@@ -103,6 +103,7 @@ public class jajalgui extends javax.swing.JFrame {
             }
         });
 
+        jPanjang.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jPanjang.setText("Panjang");
 
         jLebar.setText("Lebar");

@@ -106,6 +106,7 @@ public class jajalgui extends javax.swing.JFrame {
         jPanjang.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jPanjang.setText("Panjang");
 
+        jLebar.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jLebar.setText("Lebar");
 
         jTextTinggi.addActionListener(new java.awt.event.ActionListener() {
@@ -114,8 +115,10 @@ public class jajalgui extends javax.swing.JFrame {
             }
         });
 
+        jTinggi.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jTinggi.setText("Tinggi");
 
+        jAlas.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jAlas.setText("Alas");
 
         jTextAlas.addActionListener(new java.awt.event.ActionListener() {
@@ -144,6 +147,7 @@ public class jajalgui extends javax.swing.JFrame {
             }
         });
 
+        jJari.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jJari.setText("Jari2");
 
         jHasilLuas.setText("Luas");
@@ -156,6 +160,7 @@ public class jajalgui extends javax.swing.JFrame {
             }
         });
 
+        jJari1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jJari1.setText("Sisi Miring");
 
         jPanjang1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
@@ -204,7 +209,7 @@ public class jajalgui extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jHasilKeliling)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
                                 .addComponent(jTextHasilKel, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jHasilLuas)

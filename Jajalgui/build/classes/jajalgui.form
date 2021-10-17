@@ -72,14 +72,14 @@
                                       <Component id="jTextHasilLuas" min="-2" pref="86" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jHasilLuas1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="HasilVol" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jTextHasilLuas1" min="-2" pref="86" max="-2" attributes="0"/>
+                                      <Component id="HasilVolume" min="-2" pref="86" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jHasilLuas2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="HasilLp" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jTextHasilLuas2" min="-2" pref="86" max="-2" attributes="0"/>
+                                      <Component id="Hasilluasper" min="-2" pref="86" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
@@ -107,13 +107,13 @@
                               </Group>
                               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jRadioButton1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton5" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton6" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="PrismaSegitiga" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Balok" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Tabung" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Kerucut" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Bola" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="LimasSegiempat" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="LimasSegitiga" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jRadioSegitiga" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jRadioButtonPersegi" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jRadioButtonLingkaran" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -231,17 +231,17 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jTextAlas" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jAlas" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jRadioButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextHasilLuas1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jHasilLuas1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="PrismaSegitiga" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="HasilVolume" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="HasilVol" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jTextJari" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jJari" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jRadioButton2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextHasilLuas2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jHasilLuas2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Balok" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Hasilluasper" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="HasilLp" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
@@ -251,15 +251,15 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Tabung" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jRadioButton4" min="-2" max="-2" attributes="0"/>
+                      <Component id="Kerucut" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jRadioButton5" min="-2" max="-2" attributes="0"/>
+                      <Component id="Bola" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jRadioButton6" min="-2" max="-2" attributes="0"/>
+                      <Component id="LimasSegiempat" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jRadioButton7" min="-2" max="-2" attributes="0"/>
+                      <Component id="LimasSegitiga" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jButton2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="100" max="32767" attributes="0"/>
@@ -418,6 +418,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextHasilKel">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextHasilKelActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextTinggi">
       <Events>
@@ -487,15 +490,18 @@
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton1">
+    <Component class="javax.swing.JRadioButton" name="PrismaSegitiga">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Prisma Segitiga"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PrismaSegitigaActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton2">
+    <Component class="javax.swing.JRadioButton" name="Balok">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -503,7 +509,7 @@
         <Property name="text" type="java.lang.String" value="Prisma Segiempat/Balok"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton3">
+    <Component class="javax.swing.JRadioButton" name="Tabung">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -511,7 +517,7 @@
         <Property name="text" type="java.lang.String" value="Tabung"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton4">
+    <Component class="javax.swing.JRadioButton" name="Kerucut">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -519,7 +525,7 @@
         <Property name="text" type="java.lang.String" value="Kerucut"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton5">
+    <Component class="javax.swing.JRadioButton" name="Bola">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -527,7 +533,7 @@
         <Property name="text" type="java.lang.String" value="Bola"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton6">
+    <Component class="javax.swing.JRadioButton" name="LimasSegiempat">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -535,7 +541,7 @@
         <Property name="text" type="java.lang.String" value="Limas Segiempat"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButton7">
+    <Component class="javax.swing.JRadioButton" name="LimasSegitiga">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -548,18 +554,18 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Hitung 2D"/>
+        <Property name="text" type="java.lang.String" value="Hitung 3D"/>
         <Property name="actionCommand" type="java.lang.String" value="Hitung 3D"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextHasilLuas1">
+    <Component class="javax.swing.JTextField" name="HasilVolume">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextHasilLuas2">
+    <Component class="javax.swing.JTextField" name="Hasilluasper">
     </Component>
-    <Component class="javax.swing.JLabel" name="jHasilLuas1">
+    <Component class="javax.swing.JLabel" name="HasilVol">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>
@@ -567,7 +573,7 @@
         <Property name="text" type="java.lang.String" value="Volume"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jHasilLuas2">
+    <Component class="javax.swing.JLabel" name="HasilLp">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="12" style="0"/>

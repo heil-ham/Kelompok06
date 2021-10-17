@@ -44,6 +44,13 @@ return (2*(a+b));
 
 }
 
+
+
+        
+
+
+
+
 public class jajalgui extends javax.swing.JFrame {
 
     /**
@@ -91,18 +98,18 @@ public class jajalgui extends javax.swing.JFrame {
         jTextSisi = new javax.swing.JTextField();
         jTextDiagonal = new javax.swing.JTextField();
         jPanjang3 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jRadioButton5 = new javax.swing.JRadioButton();
-        jRadioButton6 = new javax.swing.JRadioButton();
-        jRadioButton7 = new javax.swing.JRadioButton();
+        PrismaSegitiga = new javax.swing.JRadioButton();
+        Balok = new javax.swing.JRadioButton();
+        Tabung = new javax.swing.JRadioButton();
+        Kerucut = new javax.swing.JRadioButton();
+        Bola = new javax.swing.JRadioButton();
+        LimasSegiempat = new javax.swing.JRadioButton();
+        LimasSegitiga = new javax.swing.JRadioButton();
         jButton2 = new javax.swing.JButton();
-        jTextHasilLuas1 = new javax.swing.JTextField();
-        jTextHasilLuas2 = new javax.swing.JTextField();
-        jHasilLuas1 = new javax.swing.JLabel();
-        jHasilLuas2 = new javax.swing.JLabel();
+        HasilVolume = new javax.swing.JTextField();
+        Hasilluasper = new javax.swing.JTextField();
+        HasilVol = new javax.swing.JLabel();
+        HasilLp = new javax.swing.JLabel();
         jRadioButtonPersegiPanjang = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -201,6 +208,12 @@ public class jajalgui extends javax.swing.JFrame {
         jHasilKeliling.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jHasilKeliling.setText("Keliling");
 
+        jTextHasilKel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextHasilKelActionPerformed(evt);
+            }
+        });
+
         jTextTinggi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextTinggiActionPerformed(evt);
@@ -248,29 +261,34 @@ public class jajalgui extends javax.swing.JFrame {
         jPanjang3.setText("Bangun 2D");
         jPanjang3.setToolTipText("");
 
-        jRadioButton1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jRadioButton1.setText("Prisma Segitiga");
+        PrismaSegitiga.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        PrismaSegitiga.setText("Prisma Segitiga");
+        PrismaSegitiga.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PrismaSegitigaActionPerformed(evt);
+            }
+        });
 
-        jRadioButton2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jRadioButton2.setText("Prisma Segiempat/Balok");
+        Balok.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        Balok.setText("Prisma Segiempat/Balok");
 
-        jRadioButton3.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jRadioButton3.setText("Tabung");
+        Tabung.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        Tabung.setText("Tabung");
 
-        jRadioButton4.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jRadioButton4.setText("Kerucut");
+        Kerucut.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        Kerucut.setText("Kerucut");
 
-        jRadioButton5.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jRadioButton5.setText("Bola");
+        Bola.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        Bola.setText("Bola");
 
-        jRadioButton6.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jRadioButton6.setText("Limas Segiempat");
+        LimasSegiempat.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        LimasSegiempat.setText("Limas Segiempat");
 
-        jRadioButton7.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jRadioButton7.setText("Limas Segitiga");
+        LimasSegitiga.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        LimasSegitiga.setText("Limas Segitiga");
 
         jButton2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jButton2.setText("Hitung 2D");
+        jButton2.setText("Hitung 3D");
         jButton2.setActionCommand("Hitung 3D");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -278,11 +296,11 @@ public class jajalgui extends javax.swing.JFrame {
             }
         });
 
-        jHasilLuas1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jHasilLuas1.setText("Volume");
+        HasilVol.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        HasilVol.setText("Volume");
 
-        jHasilLuas2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jHasilLuas2.setText("Luas Permukaan");
+        HasilLp.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        HasilLp.setText("Luas Permukaan");
 
         jRadioButtonPersegiPanjang.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jRadioButtonPersegiPanjang.setText("Persegi Panjang");
@@ -337,13 +355,13 @@ public class jajalgui extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(jTextHasilLuas, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jHasilLuas1)
+                                        .addComponent(HasilVol)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jTextHasilLuas1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(HasilVolume, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jHasilLuas2)
+                                        .addComponent(HasilLp)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jTextHasilLuas2, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(Hasilluasper, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(44, 44, 44))))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -362,13 +380,13 @@ public class jajalgui extends javax.swing.JFrame {
                                     .addComponent(jTextJari, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(33, 33, 33)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jRadioButton1)
-                                    .addComponent(jRadioButton2)
-                                    .addComponent(jRadioButton3)
-                                    .addComponent(jRadioButton4)
-                                    .addComponent(jRadioButton5)
-                                    .addComponent(jRadioButton6)
-                                    .addComponent(jRadioButton7)
+                                    .addComponent(PrismaSegitiga)
+                                    .addComponent(Balok)
+                                    .addComponent(Tabung)
+                                    .addComponent(Kerucut)
+                                    .addComponent(Bola)
+                                    .addComponent(LimasSegiempat)
+                                    .addComponent(LimasSegitiga)
                                     .addComponent(jRadioSegitiga)
                                     .addComponent(jRadioButtonPersegi)
                                     .addComponent(jRadioButtonLingkaran)
@@ -453,16 +471,16 @@ public class jajalgui extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextAlas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jAlas)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jTextHasilLuas1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jHasilLuas1))
+                    .addComponent(PrismaSegitiga)
+                    .addComponent(HasilVolume, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(HasilVol))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextJari, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jJari)
-                    .addComponent(jRadioButton2)
-                    .addComponent(jTextHasilLuas2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jHasilLuas2))
+                    .addComponent(Balok)
+                    .addComponent(Hasilluasper, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(HasilLp))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -470,15 +488,15 @@ public class jajalgui extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jRadioButton3)
+                        .addComponent(Tabung)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jRadioButton4)
+                        .addComponent(Kerucut)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jRadioButton5)
+                        .addComponent(Bola)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jRadioButton6)
+                        .addComponent(LimasSegiempat)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jRadioButton7)
+                        .addComponent(LimasSegitiga)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton2)
                         .addContainerGap(100, Short.MAX_VALUE))))
@@ -498,7 +516,7 @@ public class jajalgui extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        float panjang,lebar,alas,tinggi,jari,sisiMir,sisi,diagonal;
+        float panjang,lebar,alas,tinggi,jari,sisiMir,sisi,diagonal,luas,keliling;
         panjang = Float.valueOf(jTextPanjang.getText());
         lebar = Float.valueOf(jTextLebar.getText());
         alas = Float.valueOf(jTextAlas.getText());
@@ -560,6 +578,7 @@ public class jajalgui extends javax.swing.JFrame {
             jTextDiagonal.setEditable(false);
             jTextSisi.setEditable(false);
             
+            
            
             jTextJari.setText("0");
             jTextAlas.setText("0");
@@ -569,6 +588,10 @@ public class jajalgui extends javax.swing.JFrame {
             jTextLebar.setText("");
             jTextDiagonal.setText("0");
             jTextSisi.setText("0");
+            jTextHasilLuas.setText("");
+            jTextHasilKel.setText("");
+
+            
         }
     }//GEN-LAST:event_jRadioButtonPersegiActionPerformed
 
@@ -599,6 +622,8 @@ public class jajalgui extends javax.swing.JFrame {
             jTextJari.setText("0");
             jTextDiagonal.setText("0");
             jTextSisi.setText("0");
+            jTextHasilLuas.setText("");
+            jTextHasilKel.setText("");
             
         }
     }//GEN-LAST:event_jRadioSegitigaActionPerformed
@@ -627,6 +652,9 @@ public class jajalgui extends javax.swing.JFrame {
             jTextLebar.setText("0");
             jTextDiagonal.setText("0");
             jTextSisi.setText("0");
+            jTextHasilLuas.setText("");
+            jTextHasilKel.setText("");
+
             
         }
         
@@ -642,7 +670,7 @@ public class jajalgui extends javax.swing.JFrame {
             
             jTextSiMir.setEditable(false);
             jTextAlas.setEditable(false);
-            jTextJari.setEditable(false);
+            jTextJari.setEditable(true);
             
             jTextPanjang.setEditable(false);
             jTextLebar.setEditable(false);
@@ -657,6 +685,9 @@ public class jajalgui extends javax.swing.JFrame {
             jTextLebar.setText("0");
             jTextDiagonal.setText("0");
             jTextSisi.setText("0");
+            jTextHasilLuas.setText("");
+            jTextHasilKel.setText("");
+
             
            
             
@@ -680,7 +711,11 @@ public class jajalgui extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextDiagonalActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        
+        
+        
+        
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jRadioButtonPersegiPanjangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonPersegiPanjangActionPerformed
@@ -711,6 +746,9 @@ public class jajalgui extends javax.swing.JFrame {
             jTextLebar.setText("");
             jTextDiagonal.setText("0");
             jTextSisi.setText("0");
+            jTextHasilLuas.setText("");
+            jTextHasilKel.setText("");
+
             
         }    // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButtonPersegiPanjangActionPerformed
@@ -722,6 +760,47 @@ public class jajalgui extends javax.swing.JFrame {
     private void jHasilLuasAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jHasilLuasAncestorAdded
         // TODO add your handling code here:
     }//GEN-LAST:event_jHasilLuasAncestorAdded
+
+    private void jTextHasilKelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextHasilKelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextHasilKelActionPerformed
+
+    private void PrismaSegitigaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PrismaSegitigaActionPerformed
+        // TODO add your handling code here:
+        if (PrismaSegitiga.isSelected()==true) 
+        {
+            Balok.setSelected(false);
+            Tabung.setSelected(false);
+            Kerucut.setSelected(false);
+            Bola.setSelected(false);
+            LimasSegiempat.setSelected(false);
+            LimasSegitiga.setSelected(false);
+            
+            
+            jTextLebar.setEditable(false);
+            jTextPanjang.setEditable(false);
+            jTextSiMir.setEditable(true);
+            jTextTinggi.setEditable(true);
+            jTextDiagonal.setEditable(false);
+            jTextSisi.setEditable(false);
+            jTextAlas.setEditable(true);
+            jTextJari.setEditable(false);
+            
+            jTextLebar.setText("0"); 
+            jTextPanjang.setText("0");
+            jTextSiMir.setText("");
+            jTextTinggi.setText("");
+            jTextDiagonal.setText("0");
+            jTextSisi.setText("0");            
+            jTextAlas.setText("");
+            jTextJari.setText("0");
+                       
+            jTextHasilLuas.setText("");
+            jTextHasilKel.setText("");
+            jTextHasilKel.setText("");
+            jTextHasilKel.setText("");
+        }
+    }//GEN-LAST:event_PrismaSegitigaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -759,14 +838,23 @@ public class jajalgui extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton Balok;
+    private javax.swing.JRadioButton Bola;
+    private javax.swing.JLabel HasilLp;
+    private javax.swing.JLabel HasilVol;
+    private javax.swing.JTextField HasilVolume;
+    private javax.swing.JTextField Hasilluasper;
+    private javax.swing.JRadioButton Kerucut;
+    private javax.swing.JRadioButton LimasSegiempat;
+    private javax.swing.JRadioButton LimasSegitiga;
+    private javax.swing.JRadioButton PrismaSegitiga;
+    private javax.swing.JRadioButton Tabung;
     private javax.swing.JLabel jAlas;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jDiagonal;
     private javax.swing.JLabel jHasilKeliling;
     private javax.swing.JLabel jHasilLuas;
-    private javax.swing.JLabel jHasilLuas1;
-    private javax.swing.JLabel jHasilLuas2;
     private javax.swing.JLabel jJari;
     private javax.swing.JLabel jJari1;
     private javax.swing.JLabel jLebar;
@@ -774,13 +862,6 @@ public class jajalgui extends javax.swing.JFrame {
     private javax.swing.JLabel jPanjang1;
     private javax.swing.JLabel jPanjang2;
     private javax.swing.JLabel jPanjang3;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JRadioButton jRadioButton6;
-    private javax.swing.JRadioButton jRadioButton7;
     private javax.swing.JRadioButton jRadioButtonJajar;
     private javax.swing.JRadioButton jRadioButtonLingkaran;
     private javax.swing.JRadioButton jRadioButtonPersegi;
@@ -791,8 +872,6 @@ public class jajalgui extends javax.swing.JFrame {
     private javax.swing.JTextField jTextDiagonal;
     private javax.swing.JTextField jTextHasilKel;
     private javax.swing.JTextField jTextHasilLuas;
-    private javax.swing.JTextField jTextHasilLuas1;
-    private javax.swing.JTextField jTextHasilLuas2;
     private javax.swing.JTextField jTextJari;
     private javax.swing.JTextField jTextLebar;
     private javax.swing.JTextField jTextPanjang;

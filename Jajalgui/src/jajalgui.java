@@ -45,7 +45,6 @@ return (2*(a+b));
 }
 
 
-
         
 
 
@@ -107,7 +106,7 @@ public class jajalgui extends javax.swing.JFrame {
         LimasSegitiga = new javax.swing.JRadioButton();
         jButton2 = new javax.swing.JButton();
         HasilVolume = new javax.swing.JTextField();
-        Hasilluasper = new javax.swing.JTextField();
+        HasilLuasper = new javax.swing.JTextField();
         HasilVol = new javax.swing.JLabel();
         HasilLp = new javax.swing.JLabel();
         jRadioButtonPersegiPanjang = new javax.swing.JRadioButton();
@@ -271,21 +270,51 @@ public class jajalgui extends javax.swing.JFrame {
 
         Balok.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         Balok.setText("Prisma Segiempat/Balok");
+        Balok.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BalokActionPerformed(evt);
+            }
+        });
 
         Tabung.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         Tabung.setText("Tabung");
+        Tabung.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TabungActionPerformed(evt);
+            }
+        });
 
         Kerucut.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         Kerucut.setText("Kerucut");
+        Kerucut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                KerucutActionPerformed(evt);
+            }
+        });
 
         Bola.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         Bola.setText("Bola");
+        Bola.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BolaActionPerformed(evt);
+            }
+        });
 
         LimasSegiempat.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         LimasSegiempat.setText("Limas Segiempat");
+        LimasSegiempat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LimasSegiempatActionPerformed(evt);
+            }
+        });
 
         LimasSegitiga.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         LimasSegitiga.setText("Limas Segitiga");
+        LimasSegitiga.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LimasSegitigaActionPerformed(evt);
+            }
+        });
 
         jButton2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jButton2.setText("Hitung 3D");
@@ -361,7 +390,7 @@ public class jajalgui extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(HasilLp)
                                         .addGap(18, 18, 18)
-                                        .addComponent(Hasilluasper, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(HasilLuasper, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(44, 44, 44))))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -479,7 +508,7 @@ public class jajalgui extends javax.swing.JFrame {
                     .addComponent(jTextJari, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jJari)
                     .addComponent(Balok)
-                    .addComponent(Hasilluasper, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(HasilLuasper, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(HasilLp))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -567,6 +596,13 @@ public class jajalgui extends javax.swing.JFrame {
             jRadioButtonJajar.setSelected(false);
             jRadioButtonLingkaran.setSelected(false);
             jRadioButtonPersegiPanjang.setSelected(false);
+            PrismaSegitiga.setSelected(false);
+            Balok.setSelected(false);
+            Tabung.setSelected(false);
+            Kerucut.setSelected(false);
+            Bola.setSelected(false);
+            LimasSegiempat.setSelected(false);
+            LimasSegitiga.setSelected(false);
             
             jTextLebar.setEditable(true);
             jTextPanjang.setEditable(true);
@@ -590,6 +626,8 @@ public class jajalgui extends javax.swing.JFrame {
             jTextSisi.setText("0");
             jTextHasilLuas.setText("");
             jTextHasilKel.setText("");
+            HasilVolume.setText("");
+            HasilLuasper.setText("");
 
             
         }
@@ -602,6 +640,14 @@ public class jajalgui extends javax.swing.JFrame {
             jRadioButtonLingkaran.setSelected(false);
             jRadioButtonJajar.setSelected(false);
             jRadioButtonPersegiPanjang.setSelected(false);
+            PrismaSegitiga.setSelected(false);
+            Balok.setSelected(false);
+            Tabung.setSelected(false);
+            Kerucut.setSelected(false);
+            Bola.setSelected(false);
+            LimasSegiempat.setSelected(false);
+            LimasSegitiga.setSelected(false);
+            
             
             
             jTextAlas.setEditable(true);
@@ -624,6 +670,8 @@ public class jajalgui extends javax.swing.JFrame {
             jTextSisi.setText("0");
             jTextHasilLuas.setText("");
             jTextHasilKel.setText("");
+            HasilVolume.setText("");
+            HasilLuasper.setText("");
             
         }
     }//GEN-LAST:event_jRadioSegitigaActionPerformed
@@ -635,6 +683,14 @@ public class jajalgui extends javax.swing.JFrame {
             jRadioButtonLingkaran.setSelected(false);
             jRadioButtonPersegi.setSelected(false);
             jRadioButtonPersegiPanjang.setSelected(false);
+            PrismaSegitiga.setSelected(false);
+            Balok.setSelected(false);
+            Tabung.setSelected(false);
+            Kerucut.setSelected(false);
+            Bola.setSelected(false);
+            LimasSegiempat.setSelected(false);
+            LimasSegitiga.setSelected(false);
+            
             
             jTextSiMir.setEditable(true);
             jTextAlas.setEditable(true);
@@ -654,6 +710,8 @@ public class jajalgui extends javax.swing.JFrame {
             jTextSisi.setText("0");
             jTextHasilLuas.setText("");
             jTextHasilKel.setText("");
+            HasilVolume.setText("");
+            HasilLuasper.setText("");
 
             
         }
@@ -667,6 +725,14 @@ public class jajalgui extends javax.swing.JFrame {
             jRadioSegitiga.setSelected(false);
             jRadioButtonJajar.setSelected(false);
             jRadioButtonPersegiPanjang.setSelected(false);
+            PrismaSegitiga.setSelected(false);
+            Balok.setSelected(false);
+            Tabung.setSelected(false);
+            Kerucut.setSelected(false);
+            Bola.setSelected(false);
+            LimasSegiempat.setSelected(false);
+            LimasSegitiga.setSelected(false);
+            
             
             jTextSiMir.setEditable(false);
             jTextAlas.setEditable(false);
@@ -687,6 +753,8 @@ public class jajalgui extends javax.swing.JFrame {
             jTextSisi.setText("0");
             jTextHasilLuas.setText("");
             jTextHasilKel.setText("");
+            HasilVolume.setText("");
+            HasilLuasper.setText("");
 
             
            
@@ -711,7 +779,17 @@ public class jajalgui extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextDiagonalActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        
+        // TODO add your handling code here:
+              // TODO add your handling code here:
+        float panjang,lebar,alas,tinggi,jari,sisiMir,sisi,diagonal,lp,vol;
+        panjang = Float.valueOf(jTextPanjang.getText());
+        lebar = Float.valueOf(jTextLebar.getText());
+        alas = Float.valueOf(jTextAlas.getText());
+        tinggi = Float.valueOf(jTextTinggi.getText());
+        jari = Float.valueOf(jTextJari.getText());
+        sisiMir = Float.valueOf(jTextSiMir.getText());
+        sisi = Float.valueOf(jTextSisi.getText());
+        diagonal = Float.valueOf(jTextDiagonal.getText());
         
         
         
@@ -725,6 +803,13 @@ public class jajalgui extends javax.swing.JFrame {
             jRadioSegitiga.setSelected(false);
             jRadioButtonLingkaran.setSelected(false);
             jRadioButtonJajar.setSelected(false);
+            PrismaSegitiga.setSelected(false);
+            Balok.setSelected(false);
+            Tabung.setSelected(false);
+            Kerucut.setSelected(false);
+            Bola.setSelected(false);
+            LimasSegiempat.setSelected(false);
+            LimasSegitiga.setSelected(false);
             
             
             jTextLebar.setEditable(true);
@@ -748,6 +833,8 @@ public class jajalgui extends javax.swing.JFrame {
             jTextSisi.setText("0");
             jTextHasilLuas.setText("");
             jTextHasilKel.setText("");
+            HasilVolume.setText("");
+            HasilLuasper.setText("");
 
             
         }    // TODO add your handling code here:
@@ -797,11 +884,230 @@ public class jajalgui extends javax.swing.JFrame {
                        
             jTextHasilLuas.setText("");
             jTextHasilKel.setText("");
-            jTextHasilKel.setText("");
-            jTextHasilKel.setText("");
+            HasilVolume.setText("");
+            HasilLuasper.setText("");
+            
+           
         }
     }//GEN-LAST:event_PrismaSegitigaActionPerformed
 
+    private void BalokActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BalokActionPerformed
+        // TODO add your handling code here:
+        if (Balok.isSelected()==true) 
+        {
+            PrismaSegitiga.setSelected(false);
+            Tabung.setSelected(false);
+            Kerucut.setSelected(false);
+            Bola.setSelected(false);
+            LimasSegiempat.setSelected(false);
+            LimasSegitiga.setSelected(false);
+            
+            
+            jTextLebar.setEditable(true);
+            jTextPanjang.setEditable(true);
+            jTextSiMir.setEditable(false);
+            jTextTinggi.setEditable(true);
+            jTextDiagonal.setEditable(false);
+            jTextSisi.setEditable(false);
+            jTextAlas.setEditable(false);
+            jTextJari.setEditable(false);
+            
+            jTextLebar.setText(""); 
+            jTextPanjang.setText("");
+            jTextSiMir.setText("0");
+            jTextTinggi.setText("");
+            jTextDiagonal.setText("0");
+            jTextSisi.setText("0");            
+            jTextAlas.setText("0");
+            jTextJari.setText("0");
+                       
+            jTextHasilLuas.setText("");
+            jTextHasilKel.setText("");
+            HasilVolume.setText("");
+            HasilLuasper.setText("");
+    }//GEN-LAST:event_BalokActionPerformed
+    }
+    private void TabungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TabungActionPerformed
+        // TODO add your handling code here:
+        if (Tabung.isSelected()==true) 
+        {
+            PrismaSegitiga.setSelected(false);
+            Balok.setSelected(false);
+            Kerucut.setSelected(false);
+            Bola.setSelected(false);
+            LimasSegiempat.setSelected(false);
+            LimasSegitiga.setSelected(false);
+            
+            
+            jTextLebar.setEditable(false);
+            jTextPanjang.setEditable(false);
+            jTextSiMir.setEditable(false);
+            jTextTinggi.setEditable(true);
+            jTextDiagonal.setEditable(false);
+            jTextSisi.setEditable(false);
+            jTextAlas.setEditable(true);
+            jTextJari.setEditable(false);
+            
+            jTextLebar.setText("0"); 
+            jTextPanjang.setText("0");
+            jTextSiMir.setText("0");
+            jTextTinggi.setText("");
+            jTextDiagonal.setText("0");
+            jTextSisi.setText("0");            
+            jTextAlas.setText("");
+            jTextJari.setText("0");
+                       
+            jTextHasilLuas.setText("");
+            jTextHasilKel.setText("");
+            HasilVolume.setText("");
+            HasilLuasper.setText("");
+                                         
+    }//GEN-LAST:event_TabungActionPerformed
+    }
+    private void KerucutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KerucutActionPerformed
+        // TODO add your handling code here:
+        if (Kerucut.isSelected()==true) 
+        {
+            PrismaSegitiga.setSelected(false);
+            Balok.setSelected(false);
+            Tabung.setSelected(false);
+            Bola.setSelected(false);
+            LimasSegiempat.setSelected(false);
+            LimasSegitiga.setSelected(false);
+            
+            
+            jTextLebar.setEditable(false);
+            jTextPanjang.setEditable(false);
+            jTextSiMir.setEditable(true);
+            jTextTinggi.setEditable(true);
+            jTextDiagonal.setEditable(false);
+            jTextSisi.setEditable(false);
+            jTextAlas.setEditable(false);
+            jTextJari.setEditable(true);
+            
+            jTextLebar.setText("0"); 
+            jTextPanjang.setText("0");
+            jTextSiMir.setText("");
+            jTextTinggi.setText("");
+            jTextDiagonal.setText("0");
+            jTextSisi.setText("0");            
+            jTextAlas.setText("0");
+            jTextJari.setText("");
+                       
+            jTextHasilLuas.setText("");
+            jTextHasilKel.setText("");
+            HasilVolume.setText("");
+            HasilLuasper.setText("");
+                                         
+                                    
+    }//GEN-LAST:event_KerucutActionPerformed
+    }
+    private void BolaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BolaActionPerformed
+        // TODO add your handling code here:
+         if (Bola.isSelected()==true) 
+        {
+            PrismaSegitiga.setSelected(false);
+            Balok.setSelected(false);
+            Tabung.setSelected(false);
+            Kerucut.setSelected(false);
+            LimasSegiempat.setSelected(false);
+            LimasSegitiga.setSelected(false);
+            
+            
+            jTextLebar.setEditable(false);
+            jTextPanjang.setEditable(false);
+            jTextSiMir.setEditable(false);
+            jTextTinggi.setEditable(false);
+            jTextDiagonal.setEditable(false);
+            jTextSisi.setEditable(false);
+            jTextAlas.setEditable(false);
+            jTextJari.setEditable(true);
+            
+            jTextLebar.setText("0"); 
+            jTextPanjang.setText("0");
+            jTextSiMir.setText("0");
+            jTextTinggi.setText("0");
+            jTextDiagonal.setText("0");
+            jTextSisi.setText("0");            
+            jTextAlas.setText("0");
+            jTextJari.setText("");
+                       
+            jTextHasilLuas.setText("");
+            jTextHasilKel.setText("");
+            HasilVolume.setText("");
+            HasilLuasper.setText("");
+    }//GEN-LAST:event_BolaActionPerformed
+    }
+    private void LimasSegiempatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LimasSegiempatActionPerformed
+    if (LimasSegiempat.isSelected()==true) 
+        {
+            PrismaSegitiga.setSelected(false);
+            Balok.setSelected(false);
+            Tabung.setSelected(false);
+            Kerucut.setSelected(false);
+            Bola.setSelected(false);
+            LimasSegitiga.setSelected(false);
+            
+            
+            jTextLebar.setEditable(false);
+            jTextPanjang.setEditable(false);
+            jTextSiMir.setEditable(false);
+            jTextTinggi.setEditable(true);
+            jTextDiagonal.setEditable(false);
+            jTextSisi.setEditable(true);
+            jTextAlas.setEditable(false);
+            jTextJari.setEditable(false);
+            
+            jTextLebar.setText("0"); 
+            jTextPanjang.setText("0");
+            jTextSiMir.setText("0");
+            jTextTinggi.setText("");
+            jTextDiagonal.setText("0");
+            jTextSisi.setText("");            
+            jTextAlas.setText("0");
+            jTextJari.setText("0");
+                       
+            jTextHasilLuas.setText("");
+            jTextHasilKel.setText("");
+            HasilVolume.setText("");
+            HasilLuasper.setText("");        // TODO add your handling code here:
+    }//GEN-LAST:event_LimasSegiempatActionPerformed
+    }
+    private void LimasSegitigaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LimasSegitigaActionPerformed
+    if (LimasSegitiga.isSelected()==true) 
+        {
+            PrismaSegitiga.setSelected(false);
+            Balok.setSelected(false);
+            Tabung.setSelected(false);
+            Kerucut.setSelected(false);
+            Bola.setSelected(false);
+            LimasSegiempat.setSelected(false);
+            
+            
+            jTextLebar.setEditable(false);
+            jTextPanjang.setEditable(false);
+            jTextSiMir.setEditable(false);
+            jTextTinggi.setEditable(true);
+            jTextDiagonal.setEditable(false);
+            jTextSisi.setEditable(true);
+            jTextAlas.setEditable(true);
+            jTextJari.setEditable(false);
+            
+            jTextLebar.setText("0"); 
+            jTextPanjang.setText("0");
+            jTextSiMir.setText("0");
+            jTextTinggi.setText("");
+            jTextDiagonal.setText("0");
+            jTextSisi.setText("");            
+            jTextAlas.setText("");
+            jTextJari.setText("0");
+                       
+            jTextHasilLuas.setText("");
+            jTextHasilKel.setText("");
+            HasilVolume.setText("");
+            HasilLuasper.setText("");           // TODO add your handling code here:
+    }//GEN-LAST:event_LimasSegitigaActionPerformed
+    }
     /**
      * @param args the command line arguments
      */
@@ -841,9 +1147,9 @@ public class jajalgui extends javax.swing.JFrame {
     private javax.swing.JRadioButton Balok;
     private javax.swing.JRadioButton Bola;
     private javax.swing.JLabel HasilLp;
+    private javax.swing.JTextField HasilLuasper;
     private javax.swing.JLabel HasilVol;
     private javax.swing.JTextField HasilVolume;
-    private javax.swing.JTextField Hasilluasper;
     private javax.swing.JRadioButton Kerucut;
     private javax.swing.JRadioButton LimasSegiempat;
     private javax.swing.JRadioButton LimasSegitiga;

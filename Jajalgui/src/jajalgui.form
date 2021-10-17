@@ -79,7 +79,7 @@
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="HasilLp" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="Hasilluasper" min="-2" pref="86" max="-2" attributes="0"/>
+                                      <Component id="HasilLuasper" min="-2" pref="86" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
@@ -240,7 +240,7 @@
                   <Component id="jTextJari" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jJari" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Balok" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Hasilluasper" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="HasilLuasper" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="HasilLp" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -508,6 +508,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Prisma Segiempat/Balok"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BalokActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JRadioButton" name="Tabung">
       <Properties>
@@ -516,6 +519,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Tabung"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TabungActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JRadioButton" name="Kerucut">
       <Properties>
@@ -524,6 +530,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Kerucut"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="KerucutActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JRadioButton" name="Bola">
       <Properties>
@@ -532,6 +541,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Bola"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BolaActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JRadioButton" name="LimasSegiempat">
       <Properties>
@@ -540,6 +552,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Limas Segiempat"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LimasSegiempatActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JRadioButton" name="LimasSegitiga">
       <Properties>
@@ -548,6 +563,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Limas Segitiga"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LimasSegitigaActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
@@ -563,7 +581,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="HasilVolume">
     </Component>
-    <Component class="javax.swing.JTextField" name="Hasilluasper">
+    <Component class="javax.swing.JTextField" name="HasilLuasper">
     </Component>
     <Component class="javax.swing.JLabel" name="HasilVol">
       <Properties>

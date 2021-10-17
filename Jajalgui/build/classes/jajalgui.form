@@ -43,19 +43,23 @@
                   <Component id="jTextPanjang" alignment="0" max="32767" attributes="0"/>
                   <Component id="jTextLebar" alignment="0" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jRadioSegitiga" min="-2" max="-2" attributes="0"/>
-                          <Component id="jRadioButtonPersegi" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jRadioButtonLingkaran" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jRadioButtonJajar" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jRadioButtonPersegi" min="-2" max="-2" attributes="0"/>
+                          <Component id="jRadioSegitiga" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jRadioButtonLingkaran" min="-2" max="-2" attributes="0"/>
+                          <Component id="jRadioButtonJajar" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Component id="jHasilKeliling" min="-2" max="-2" attributes="0"/>
@@ -69,22 +73,29 @@
                           </Group>
                       </Group>
                   </Group>
-                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
           </Group>
-          <Group type="102" alignment="1" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="219" max="-2" attributes="0"/>
+              <Component id="jPanjang1" min="-2" pref="185" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="jPanjang1" min="-2" pref="275" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="211" max="-2" attributes="0"/>
+          </Group>
+          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="280" max="32767" attributes="0"/>
+                  <Component id="jPanjang2" min="-2" pref="275" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="201" max="-2" attributes="0"/>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
               <Component id="jPanjang1" min="-2" pref="31" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jTextPanjang" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jPanjang" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -96,14 +107,16 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jRadioSegitiga" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jRadioButtonJajar" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jHasilKeliling" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jTextHasilKel" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                       <Component id="jTextLebar" min="-2" max="-2" attributes="0"/>
                       <Component id="jLebar" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                          <Component id="jRadioSegitiga" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jRadioButtonJajar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -129,7 +142,14 @@
               </Group>
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               <Component id="jhasil" min="-2" pref="0" max="-2" attributes="0"/>
-              <EmptySpace pref="106" max="32767" attributes="0"/>
+              <EmptySpace pref="90" max="32767" attributes="0"/>
+          </Group>
+          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                  <Component id="jPanjang2" min="-2" pref="31" max="-2" attributes="0"/>
+                  <EmptySpace pref="342" max="32767" attributes="0"/>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -249,6 +269,15 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jPanjang1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Times New Roman" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Bangun 2D"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jPanjang2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="1"/>

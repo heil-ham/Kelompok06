@@ -314,6 +314,7 @@ public class FrameNyoba extends javax.swing.JFrame {
 
         MainPanel.setLayout(new java.awt.CardLayout());
 
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel1.setText("Selamat Datang , Pilih menu disamping");
 
         javax.swing.GroupLayout jPanelHomeLayout = new javax.swing.GroupLayout(jPanelHome);
@@ -321,7 +322,7 @@ public class FrameNyoba extends javax.swing.JFrame {
         jPanelHomeLayout.setHorizontalGroup(
             jPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelHomeLayout.createSequentialGroup()
-                .addContainerGap(203, Short.MAX_VALUE)
+                .addContainerGap(168, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(103, 103, 103))
         );

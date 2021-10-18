@@ -59,7 +59,7 @@
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="183" pref="329" max="32767" attributes="0"/>
+                              <EmptySpace min="183" pref="338" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="jHasilKeliling" min="-2" max="-2" attributes="0"/>
@@ -132,7 +132,7 @@
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="280" max="32767" attributes="0"/>
+                  <EmptySpace pref="285" max="32767" attributes="0"/>
                   <Component id="jPanjang2" min="-2" pref="275" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="201" max="-2" attributes="0"/>
               </Group>
@@ -573,7 +573,6 @@
           <Font name="Times New Roman" size="12" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Hitung 3D"/>
-        <Property name="actionCommand" type="java.lang.String" value="Hitung 3D"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>

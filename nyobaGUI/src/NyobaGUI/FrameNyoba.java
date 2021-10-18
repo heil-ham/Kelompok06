@@ -157,6 +157,7 @@ public class FrameNyoba extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jButtonPersegi.setFont(new java.awt.Font("Times New Roman", 0, 11)); // NOI18N
         jButtonPersegi.setText("persegi");
         jButtonPersegi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

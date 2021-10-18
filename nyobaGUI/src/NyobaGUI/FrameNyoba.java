@@ -178,6 +178,7 @@ public class FrameNyoba extends javax.swing.JFrame {
             }
         });
 
+        jButtonHome.setFont(new java.awt.Font("Times New Roman", 0, 11)); // NOI18N
         jButtonHome.setText("HOME");
         jButtonHome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -335,10 +336,8 @@ public class FrameNyoba extends javax.swing.JFrame {
 
         PersegiPanel.setBackground(new java.awt.Color(255, 255, 51));
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Panjang");
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Lebar");
 
         jLabel4.setText("Luas");
@@ -506,19 +505,14 @@ public class FrameNyoba extends javax.swing.JFrame {
 
         JajarPanel.setBackground(new java.awt.Color(0, 204, 204));
 
-        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
         jLabel14.setText("Alas");
 
-        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setText("Tinggi");
 
-        jLabel16.setForeground(new java.awt.Color(0, 0, 0));
         jLabel16.setText("Sisi Miring");
 
-        jLabel17.setForeground(new java.awt.Color(0, 0, 0));
         jLabel17.setText("Luas");
 
-        jLabel18.setForeground(new java.awt.Color(0, 0, 0));
         jLabel18.setText("Keliling");
 
         javax.swing.GroupLayout JajarPanelLayout = new javax.swing.GroupLayout(JajarPanel);

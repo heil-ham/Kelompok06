@@ -51,30 +51,41 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jButtonHome" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jButtonHitungdua" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButtonHome" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButtonHitungtiga" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="jButtonHitungdua" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
-                      <Component id="jButtonJajar" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jButtonPrisma" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jButtonBalok" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jButtonKerucut" alignment="1" max="32767" attributes="0"/>
-                      <Component id="jButtonBola" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jButtonTabung" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jButtonLimastiga" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jButtonLimasempat" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jButtonSegitiga" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jButtonLingkaran" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jButtonPersegi" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jButtonJajar" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jButtonPrisma" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jButtonBalok" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jButtonKerucut" alignment="1" max="32767" attributes="0"/>
+                              <Component id="jButtonBola" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jButtonTabung" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jButtonLimastiga" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jButtonLimasempat" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jButtonSegitiga" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jButtonLingkaran" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jButtonPersegi" alignment="0" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                  <Component id="jButtonHitungtiga" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -109,7 +120,7 @@
                   <Component id="jButtonLimasempat" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="jButtonHitungtiga" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -118,9 +129,9 @@
         <Component class="javax.swing.JButton" name="jButtonPersegi">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Times New Roman" size="11" style="0"/>
+              <Font name="Times New Roman" size="12" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="persegi"/>
+            <Property name="text" type="java.lang.String" value="Persegi"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonPersegiActionPerformed"/>
@@ -128,7 +139,10 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonLingkaran">
           <Properties>
-            <Property name="text" type="java.lang.String" value="lingkaran"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="12" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Lingkaran"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonLingkaranActionPerformed"/>
@@ -136,6 +150,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonHitungdua">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="12" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Hitung 2D"/>
           </Properties>
           <Events>
@@ -155,12 +172,18 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonHitungtiga">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="12" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Hitung 3D"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="jButtonSegitiga">
           <Properties>
-            <Property name="text" type="java.lang.String" value="segitiga siku"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="12" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Segitiga siku"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonSegitigaActionPerformed"/>
@@ -168,7 +191,11 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonJajar">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jajar genjang"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="12" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Jajar genjang"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonJajarActionPerformed"/>
@@ -176,7 +203,10 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonPrisma">
           <Properties>
-            <Property name="text" type="java.lang.String" value="prisma segitiga"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="12" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Prisma segitiga"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonPrismaActionPerformed"/>
@@ -184,7 +214,10 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonBalok">
           <Properties>
-            <Property name="text" type="java.lang.String" value="balok"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="12" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Balok"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonBalokActionPerformed"/>
@@ -192,7 +225,10 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonKerucut">
           <Properties>
-            <Property name="text" type="java.lang.String" value="kerucut"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="12" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Kerucut"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonKerucutActionPerformed"/>
@@ -200,7 +236,10 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonBola">
           <Properties>
-            <Property name="text" type="java.lang.String" value="bola"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="12" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Bola"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonBolaActionPerformed"/>
@@ -208,7 +247,10 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonTabung">
           <Properties>
-            <Property name="text" type="java.lang.String" value="tabung"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="12" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Tabung"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonTabungActionPerformed"/>
@@ -216,7 +258,10 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonLimastiga">
           <Properties>
-            <Property name="text" type="java.lang.String" value="limas tiga"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="12" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Limas tiga"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonLimastigaActionPerformed"/>
@@ -224,7 +269,10 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButtonLimasempat">
           <Properties>
-            <Property name="text" type="java.lang.String" value="limas empat"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="12" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Limas empat"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonLimasempatActionPerformed"/>
@@ -246,19 +294,19 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="168" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
+                      <EmptySpace pref="137" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="120" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="158" max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" pref="80" max="-2" attributes="0"/>
-                      <EmptySpace pref="207" max="32767" attributes="0"/>
+                      <EmptySpace pref="202" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -331,7 +379,7 @@
                           <Component id="jTextKPersegi" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="276" max="32767" attributes="0"/>
+                      <EmptySpace pref="305" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -417,7 +465,7 @@
                           <Component id="jTextKlingkaran" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="278" max="32767" attributes="0"/>
+                      <EmptySpace pref="311" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -526,7 +574,7 @@
                               <Component id="jTextKsegitiga" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="233" max="32767" attributes="0"/>
+                      <EmptySpace pref="266" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -649,7 +697,7 @@
                               <Component id="jTextLKlilingjj" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="233" max="32767" attributes="0"/>
+                      <EmptySpace pref="266" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -767,7 +815,7 @@
                               <Component id="jTextLKlilingjj1" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="233" max="32767" attributes="0"/>
+                      <EmptySpace pref="266" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>

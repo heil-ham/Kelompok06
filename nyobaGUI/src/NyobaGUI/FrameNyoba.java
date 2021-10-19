@@ -111,7 +111,6 @@ public class FrameNyoba extends javax.swing.JFrame {
         jButtonPersegi = new javax.swing.JButton();
         jButtonLingkaran = new javax.swing.JButton();
         jButtonHitungdua = new javax.swing.JButton();
-        jButtonHome = new javax.swing.JButton();
         jButtonHitungtiga = new javax.swing.JButton();
         jButtonSegitiga = new javax.swing.JButton();
         jButtonJajar = new javax.swing.JButton();
@@ -122,6 +121,9 @@ public class FrameNyoba extends javax.swing.JFrame {
         jButtonTabung = new javax.swing.JButton();
         jButtonLimastiga = new javax.swing.JButton();
         jButtonLimasempat = new javax.swing.JButton();
+        jLabel45 = new javax.swing.JLabel();
+        jButtonHome = new javax.swing.JButton();
+        jLabel46 = new javax.swing.JLabel();
         MainPanel = new javax.swing.JPanel();
         jPanelHome = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -239,6 +241,8 @@ public class FrameNyoba extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        MenuPanel.setBackground(new java.awt.Color(153, 0, 153));
+
         jButtonPersegi.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jButtonPersegi.setText("Persegi");
         jButtonPersegi.addActionListener(new java.awt.event.ActionListener() {
@@ -260,14 +264,6 @@ public class FrameNyoba extends javax.swing.JFrame {
         jButtonHitungdua.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonHitungduaActionPerformed(evt);
-            }
-        });
-
-        jButtonHome.setFont(new java.awt.Font("Times New Roman", 0, 11)); // NOI18N
-        jButtonHome.setText("HOME");
-        jButtonHome.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonHomeActionPerformed(evt);
             }
         });
 
@@ -352,21 +348,26 @@ public class FrameNyoba extends javax.swing.JFrame {
             }
         });
 
+        jLabel45.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel45.setText("Bangun ruang");
+
+        jButtonHome.setFont(new java.awt.Font("Times New Roman", 0, 11)); // NOI18N
+        jButtonHome.setText("HOME");
+        jButtonHome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonHomeActionPerformed(evt);
+            }
+        });
+
+        jLabel46.setText("Bangun datar");
+
         javax.swing.GroupLayout MenuPanelLayout = new javax.swing.GroupLayout(MenuPanel);
         MenuPanel.setLayout(MenuPanelLayout);
         MenuPanelLayout.setHorizontalGroup(
             MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButtonHome)
-                .addGap(28, 28, 28))
             .addGroup(MenuPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(MenuPanelLayout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jButtonHitungdua)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(MenuPanelLayout.createSequentialGroup()
                         .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButtonJajar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -384,14 +385,29 @@ public class FrameNyoba extends javax.swing.JFrame {
                                 .addGap(10, 10, 10)
                                 .addComponent(jButtonHitungtiga)
                                 .addGap(0, 0, Short.MAX_VALUE)))
-                        .addContainerGap())))
+                        .addContainerGap())
+                    .addGroup(MenuPanelLayout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(MenuPanelLayout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(jLabel45))
+                            .addComponent(jButtonHitungdua))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButtonHome)
+                    .addComponent(jLabel46))
+                .addGap(28, 28, 28))
         );
         MenuPanelLayout.setVerticalGroup(
             MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MenuPanelLayout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jButtonHome)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButtonPersegi)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButtonLingkaran)
@@ -401,7 +417,9 @@ public class FrameNyoba extends javax.swing.JFrame {
                 .addComponent(jButtonJajar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButtonHitungdua)
-                .addGap(21, 21, 21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel45)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButtonPrisma)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButtonBalok)
@@ -439,7 +457,7 @@ public class FrameNyoba extends javax.swing.JFrame {
             .addGroup(jPanelHomeLayout.createSequentialGroup()
                 .addGap(158, 158, 158)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(202, Short.MAX_VALUE))
+                .addContainerGap(224, Short.MAX_VALUE))
         );
 
         MainPanel.add(jPanelHome, "card4");
@@ -492,7 +510,7 @@ public class FrameNyoba extends javax.swing.JFrame {
                 .addGroup(PersegiPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextKPersegi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
-                .addContainerGap(309, Short.MAX_VALUE))
+                .addContainerGap(329, Short.MAX_VALUE))
         );
 
         MainPanel.add(PersegiPanel, "card2");
@@ -537,7 +555,7 @@ public class FrameNyoba extends javax.swing.JFrame {
                 .addGroup(LingkaranPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextKlingkaran, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8))
-                .addContainerGap(311, Short.MAX_VALUE))
+                .addContainerGap(336, Short.MAX_VALUE))
         );
 
         MainPanel.add(LingkaranPanel, "card3");
@@ -608,7 +626,7 @@ public class FrameNyoba extends javax.swing.JFrame {
                         .addComponent(jTextLsegitiga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextKsegitiga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(266, Short.MAX_VALUE))
+                .addContainerGap(289, Short.MAX_VALUE))
         );
 
         MainPanel.add(SegitigaPanel, "card5");
@@ -679,7 +697,7 @@ public class FrameNyoba extends javax.swing.JFrame {
                         .addComponent(jTextKLuasjj, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextLKlilingjj, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(266, Short.MAX_VALUE))
+                .addContainerGap(289, Short.MAX_VALUE))
         );
 
         MainPanel.add(JajarPanel, "card6");
@@ -759,7 +777,7 @@ public class FrameNyoba extends javax.swing.JFrame {
                         .addComponent(jTextVolPris, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextLPPris, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(266, Short.MAX_VALUE))
+                .addContainerGap(289, Short.MAX_VALUE))
         );
 
         MainPanel.add(PrismaPanel, "card7");
@@ -846,7 +864,7 @@ public class FrameNyoba extends javax.swing.JFrame {
                         .addComponent(jTextVolBalok, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextLPBalok, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(266, Short.MAX_VALUE))
+                .addContainerGap(289, Short.MAX_VALUE))
         );
 
         MainPanel.add(BalokPanel, "card8");
@@ -915,7 +933,7 @@ public class FrameNyoba extends javax.swing.JFrame {
                         .addComponent(jTextVolKerucut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextLPKerucut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(269, Short.MAX_VALUE))
+                .addContainerGap(291, Short.MAX_VALUE))
         );
 
         MainPanel.add(KerucutPanel, "card9");
@@ -971,7 +989,7 @@ public class FrameNyoba extends javax.swing.JFrame {
                         .addComponent(jTextVolBola, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextLPBola, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(269, Short.MAX_VALUE))
+                .addContainerGap(290, Short.MAX_VALUE))
         );
 
         MainPanel.add(BolaPanel, "card10");
@@ -1051,7 +1069,7 @@ public class FrameNyoba extends javax.swing.JFrame {
                         .addComponent(jTextVolTabung, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextLPTabung, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(269, Short.MAX_VALUE))
+                .addContainerGap(291, Short.MAX_VALUE))
         );
 
         MainPanel.add(TabungPanel, "card11");
@@ -1151,7 +1169,7 @@ public class FrameNyoba extends javax.swing.JFrame {
                         .addComponent(jTextVolLimastiga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextLPLimastiga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(266, Short.MAX_VALUE))
+                .addContainerGap(290, Short.MAX_VALUE))
         );
 
         MainPanel.add(LimastigaPanel, "card12");
@@ -1251,7 +1269,7 @@ public class FrameNyoba extends javax.swing.JFrame {
                         .addComponent(jTextVolLimasempat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextLPLimasempat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(266, Short.MAX_VALUE))
+                .addContainerGap(290, Short.MAX_VALUE))
         );
 
         MainPanel.add(LimasempatPanel, "card13");
@@ -1270,7 +1288,7 @@ public class FrameNyoba extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(MenuPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -1857,6 +1875,8 @@ public class FrameNyoba extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;

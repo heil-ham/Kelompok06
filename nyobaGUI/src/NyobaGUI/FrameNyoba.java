@@ -53,20 +53,40 @@ public float lpBalok(float panjang, float lebar,float tinggi) {
     }
 
 public float volPrismaSegitiga(float alas, float tinggi,float sisi) {
-       return (1/2*alas*tinggi); //To change body of generated methods, choose Tools | Templates.
+       return (alas*tinggi)/2; //To change body of generated methods, choose Tools | Templates.
     }
 
 public float lpPrismaSegitiga(float alas, float sisi,float sisiMir, float tinggi) {
         return ((2*1/2*sisi*sisiMir)+((sisi+sisiMir+alas)*tinggi)); //To change body of generated methods, choose Tools | Templates.
     }
 public float volTabung(float jari, float tinggi) {
-       return (22/7*jari*jari*tinggi); //To change body of generated methods, choose Tools | Templates.
+       return (float) (3.14*jari*jari*tinggi); //To change body of generated methods, choose Tools | Templates.
     }
 
 public float lpTabung(float jari,float tinggi) {
-        return (2*22/7*jari*(jari+tinggi)); //To change body of generated methods, choose Tools | Templates.
+        return (float) (2*3.14*jari*(jari+tinggi)); //To change body of generated methods, choose Tools | Templates.
+    }
+public float volBola(float jari) {
+       return (float) (4*3.14*jari*jari*jari)/3; //To change body of generated methods, choose Tools | Templates.
     }
 
+public float lpBola(float jari) {
+        return (float) (4*3.14*jari*jari); //To change body of generated methods, choose Tools | Templates.
+    }
+public float lpKerucut(float jari,float tinggi) {
+        float pelukis = (float) Math.sqrt(Math.pow(jari, 2)+Math.pow(tinggi, 2));
+       return (float) (3.14*jari*(jari+pelukis)); //To change body of generated methods, choose Tools | Templates.
+    }
+public float volKerucut(float jari,float tinggi) {
+        return (float) (3.14*jari*jari*tinggi)/3; //To change body of generated methods, choose Tools | Templates.
+    }
+
+public float volLimas(float alas, float tinggi) {
+       return (float) (alas*tinggi)/3; //To change body of generated methods, choose Tools | Templates.
+    }
+public float lpLimas(float luasAlas,float luasSegitiga) {
+        return (float) (luasAlas+(4*luasSegitiga)); //To change body of generated methods, choose Tools | Templates.
+    }
 }
 
 public class FrameNyoba extends javax.swing.JFrame {
@@ -144,16 +164,78 @@ public class FrameNyoba extends javax.swing.JFrame {
         jTextLKlilingjj = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
         PrismaPanel = new javax.swing.JPanel();
-        jTextAlasjj1 = new javax.swing.JTextField();
+        jTextAlasPris = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
-        jTextTinggijj1 = new javax.swing.JTextField();
-        jTextSismirjj1 = new javax.swing.JTextField();
+        jTextTinggiPris = new javax.swing.JTextField();
+        jTextSismirPris = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jTextKLuasjj1 = new javax.swing.JTextField();
-        jTextLKlilingjj1 = new javax.swing.JTextField();
+        jTextKPPris = new javax.swing.JLabel();
+        jTextVolPris = new javax.swing.JTextField();
+        jTextLPPris = new javax.swing.JTextField();
         jLabel23 = new javax.swing.JLabel();
+        BalokPanel = new javax.swing.JPanel();
+        jTextPanjangBalok = new javax.swing.JTextField();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jTextTinggiBalok = new javax.swing.JTextField();
+        jTextLebarBalok = new javax.swing.JTextField();
+        jLabel25 = new javax.swing.JLabel();
+        jTextKPPris1 = new javax.swing.JLabel();
+        jTextVolBalok = new javax.swing.JTextField();
+        jTextLPBalok = new javax.swing.JTextField();
+        jLabel26 = new javax.swing.JLabel();
+        KerucutPanel = new javax.swing.JPanel();
+        jTextJariKerucut = new javax.swing.JTextField();
+        jLabel34 = new javax.swing.JLabel();
+        jTextKPPris4 = new javax.swing.JLabel();
+        jTextVolKerucut = new javax.swing.JTextField();
+        jTextLPKerucut = new javax.swing.JTextField();
+        jLabel35 = new javax.swing.JLabel();
+        jTextTinggiKerucut = new javax.swing.JTextField();
+        jLabel36 = new javax.swing.JLabel();
+        BolaPanel = new javax.swing.JPanel();
+        jTextJariBola = new javax.swing.JTextField();
+        jLabel32 = new javax.swing.JLabel();
+        jTextKPPris3 = new javax.swing.JLabel();
+        jTextVolBola = new javax.swing.JTextField();
+        jTextLPBola = new javax.swing.JTextField();
+        jLabel33 = new javax.swing.JLabel();
+        TabungPanel = new javax.swing.JPanel();
+        jTextJariTabung = new javax.swing.JTextField();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jTextTinggiTabung = new javax.swing.JTextField();
+        jTextKPPris2 = new javax.swing.JLabel();
+        jTextVolTabung = new javax.swing.JTextField();
+        jTextLPTabung = new javax.swing.JTextField();
+        jLabel30 = new javax.swing.JLabel();
+        LimastigaPanel = new javax.swing.JPanel();
+        jTextAlasLimastiga = new javax.swing.JTextField();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jTextTinggiLimastiga = new javax.swing.JTextField();
+        jTextLALimastiga = new javax.swing.JTextField();
+        jLabel37 = new javax.swing.JLabel();
+        jTextKPPris5 = new javax.swing.JLabel();
+        jTextVolLimastiga = new javax.swing.JTextField();
+        jTextLPLimastiga = new javax.swing.JTextField();
+        jLabel38 = new javax.swing.JLabel();
+        jTextLTLimastiga = new javax.swing.JTextField();
+        jLabel39 = new javax.swing.JLabel();
+        LimasempatPanel = new javax.swing.JPanel();
+        jTextAlasLimasempat = new javax.swing.JTextField();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jTextTinggiLimasempat = new javax.swing.JTextField();
+        jTextLALimasempat = new javax.swing.JTextField();
+        jLabel42 = new javax.swing.JLabel();
+        jTextKPPris6 = new javax.swing.JLabel();
+        jTextVolLimasempat = new javax.swing.JTextField();
+        jTextLPLimasempat = new javax.swing.JTextField();
+        jLabel43 = new javax.swing.JLabel();
+        jTextLTLimasempat = new javax.swing.JTextField();
+        jLabel44 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -191,6 +273,11 @@ public class FrameNyoba extends javax.swing.JFrame {
 
         jButtonHitungtiga.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jButtonHitungtiga.setText("Hitung 3D");
+        jButtonHitungtiga.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonHitungtigaActionPerformed(evt);
+            }
+        });
 
         jButtonSegitiga.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jButtonSegitiga.setText("Segitiga siku");
@@ -384,7 +471,7 @@ public class FrameNyoba extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(jLabel4)
                     .addComponent(jLabel5))
-                .addContainerGap(340, Short.MAX_VALUE))
+                .addContainerGap(342, Short.MAX_VALUE))
         );
         PersegiPanelLayout.setVerticalGroup(
             PersegiPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -405,7 +492,7 @@ public class FrameNyoba extends javax.swing.JFrame {
                 .addGroup(PersegiPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextKPersegi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
-                .addContainerGap(305, Short.MAX_VALUE))
+                .addContainerGap(309, Short.MAX_VALUE))
         );
 
         MainPanel.add(PersegiPanel, "card2");
@@ -433,7 +520,7 @@ public class FrameNyoba extends javax.swing.JFrame {
                     .addComponent(jLabel6)
                     .addComponent(jLabel7)
                     .addComponent(jLabel8))
-                .addContainerGap(353, Short.MAX_VALUE))
+                .addContainerGap(355, Short.MAX_VALUE))
         );
         LingkaranPanelLayout.setVerticalGroup(
             LingkaranPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -494,7 +581,7 @@ public class FrameNyoba extends javax.swing.JFrame {
                         .addGroup(SegitigaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel9)
                             .addComponent(jLabel10))))
-                .addContainerGap(334, Short.MAX_VALUE))
+                .addContainerGap(336, Short.MAX_VALUE))
         );
         SegitigaPanelLayout.setVerticalGroup(
             SegitigaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -565,7 +652,7 @@ public class FrameNyoba extends javax.swing.JFrame {
                         .addGroup(JajarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel18)
                             .addComponent(jLabel17))))
-                .addContainerGap(334, Short.MAX_VALUE))
+                .addContainerGap(336, Short.MAX_VALUE))
         );
         JajarPanelLayout.setVerticalGroup(
             JajarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -603,14 +690,20 @@ public class FrameNyoba extends javax.swing.JFrame {
         jLabel20.setForeground(new java.awt.Color(255, 255, 255));
         jLabel20.setText("Tinggi");
 
+        jTextTinggiPris.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextTinggiPrisActionPerformed(evt);
+            }
+        });
+
         jLabel21.setForeground(new java.awt.Color(255, 255, 255));
         jLabel21.setText("Sisi Miring");
 
-        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel22.setText("Luas");
+        jTextKPPris.setForeground(new java.awt.Color(255, 255, 255));
+        jTextKPPris.setText("Volume");
 
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("Keliling");
+        jLabel23.setText("Luas permukaan");
 
         javax.swing.GroupLayout PrismaPanelLayout = new javax.swing.GroupLayout(PrismaPanel);
         PrismaPanel.setLayout(PrismaPanelLayout);
@@ -620,56 +713,548 @@ public class FrameNyoba extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(PrismaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PrismaPanelLayout.createSequentialGroup()
-                        .addComponent(jTextAlasjj1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextAlasPris, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel19))
                     .addGroup(PrismaPanelLayout.createSequentialGroup()
-                        .addComponent(jTextTinggijj1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextTinggiPris, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel20))
                     .addGroup(PrismaPanelLayout.createSequentialGroup()
-                        .addComponent(jTextSismirjj1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextSismirPris, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel21))
                     .addGroup(PrismaPanelLayout.createSequentialGroup()
                         .addGroup(PrismaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextKLuasjj1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextLKlilingjj1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextVolPris, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextLPPris, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(PrismaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel23)
-                            .addComponent(jLabel22))))
-                .addContainerGap(334, Short.MAX_VALUE))
+                            .addComponent(jTextKPPris))))
+                .addContainerGap(292, Short.MAX_VALUE))
         );
         PrismaPanelLayout.setVerticalGroup(
             PrismaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PrismaPanelLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addGroup(PrismaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextAlasjj1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextAlasPris, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel19))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(PrismaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextTinggijj1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextTinggiPris, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel20))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(PrismaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextSismirjj1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextSismirPris, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel21))
                 .addGap(38, 38, 38)
                 .addGroup(PrismaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(PrismaPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel22)
+                        .addComponent(jTextKPPris)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel23))
                     .addGroup(PrismaPanelLayout.createSequentialGroup()
-                        .addComponent(jTextKLuasjj1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextVolPris, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextLKlilingjj1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jTextLPPris, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(266, Short.MAX_VALUE))
         );
 
         MainPanel.add(PrismaPanel, "card7");
+
+        BalokPanel.setBackground(new java.awt.Color(51, 51, 255));
+
+        jTextPanjangBalok.setText("0");
+
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setText("Panjang");
+
+        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel24.setText("Tinggi");
+
+        jTextTinggiBalok.setText("0");
+        jTextTinggiBalok.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextTinggiBalokActionPerformed(evt);
+            }
+        });
+
+        jTextLebarBalok.setText("0");
+
+        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setText("Lebar");
+
+        jTextKPPris1.setForeground(new java.awt.Color(255, 255, 255));
+        jTextKPPris1.setText("Volume");
+
+        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel26.setText("Luas permukaan");
+
+        javax.swing.GroupLayout BalokPanelLayout = new javax.swing.GroupLayout(BalokPanel);
+        BalokPanel.setLayout(BalokPanelLayout);
+        BalokPanelLayout.setHorizontalGroup(
+            BalokPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BalokPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(BalokPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(BalokPanelLayout.createSequentialGroup()
+                        .addComponent(jTextPanjangBalok, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel22))
+                    .addGroup(BalokPanelLayout.createSequentialGroup()
+                        .addComponent(jTextTinggiBalok, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel24))
+                    .addGroup(BalokPanelLayout.createSequentialGroup()
+                        .addComponent(jTextLebarBalok, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel25))
+                    .addGroup(BalokPanelLayout.createSequentialGroup()
+                        .addGroup(BalokPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextVolBalok, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextLPBalok, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(BalokPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel26)
+                            .addComponent(jTextKPPris1))))
+                .addContainerGap(292, Short.MAX_VALUE))
+        );
+        BalokPanelLayout.setVerticalGroup(
+            BalokPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BalokPanelLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addGroup(BalokPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextPanjangBalok, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel22))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(BalokPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextTinggiBalok, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel24))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(BalokPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextLebarBalok, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel25))
+                .addGap(38, 38, 38)
+                .addGroup(BalokPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(BalokPanelLayout.createSequentialGroup()
+                        .addComponent(jTextKPPris1)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel26))
+                    .addGroup(BalokPanelLayout.createSequentialGroup()
+                        .addComponent(jTextVolBalok, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextLPBalok, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(266, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(BalokPanel, "card8");
+
+        KerucutPanel.setBackground(new java.awt.Color(0, 102, 0));
+
+        jTextJariKerucut.setText("0");
+
+        jLabel34.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel34.setText("Jari");
+
+        jTextKPPris4.setForeground(new java.awt.Color(255, 255, 255));
+        jTextKPPris4.setText("Volume");
+
+        jLabel35.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel35.setText("Luas permukaan");
+
+        jTextTinggiKerucut.setText("0");
+
+        jLabel36.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel36.setText("Tinggi");
+
+        javax.swing.GroupLayout KerucutPanelLayout = new javax.swing.GroupLayout(KerucutPanel);
+        KerucutPanel.setLayout(KerucutPanelLayout);
+        KerucutPanelLayout.setHorizontalGroup(
+            KerucutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(KerucutPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(KerucutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(KerucutPanelLayout.createSequentialGroup()
+                        .addComponent(jTextJariKerucut, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel34))
+                    .addGroup(KerucutPanelLayout.createSequentialGroup()
+                        .addGroup(KerucutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextVolKerucut, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextLPKerucut, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(KerucutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel35)
+                            .addComponent(jTextKPPris4)))
+                    .addGroup(KerucutPanelLayout.createSequentialGroup()
+                        .addComponent(jTextTinggiKerucut, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel36)))
+                .addContainerGap(292, Short.MAX_VALUE))
+        );
+        KerucutPanelLayout.setVerticalGroup(
+            KerucutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(KerucutPanelLayout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addGroup(KerucutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextTinggiKerucut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel36))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(KerucutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextJariKerucut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel34))
+                .addGap(38, 38, 38)
+                .addGroup(KerucutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(KerucutPanelLayout.createSequentialGroup()
+                        .addComponent(jTextKPPris4)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel35))
+                    .addGroup(KerucutPanelLayout.createSequentialGroup()
+                        .addComponent(jTextVolKerucut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextLPKerucut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(269, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(KerucutPanel, "card9");
+
+        BolaPanel.setBackground(new java.awt.Color(204, 0, 204));
+
+        jTextJariBola.setText("0");
+
+        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel32.setText("Jari");
+
+        jTextKPPris3.setForeground(new java.awt.Color(255, 255, 255));
+        jTextKPPris3.setText("Volume");
+
+        jLabel33.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel33.setText("Luas permukaan");
+
+        javax.swing.GroupLayout BolaPanelLayout = new javax.swing.GroupLayout(BolaPanel);
+        BolaPanel.setLayout(BolaPanelLayout);
+        BolaPanelLayout.setHorizontalGroup(
+            BolaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BolaPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(BolaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(BolaPanelLayout.createSequentialGroup()
+                        .addComponent(jTextJariBola, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel32))
+                    .addGroup(BolaPanelLayout.createSequentialGroup()
+                        .addGroup(BolaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextVolBola, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextLPBola, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(BolaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel33)
+                            .addComponent(jTextKPPris3))))
+                .addContainerGap(292, Short.MAX_VALUE))
+        );
+        BolaPanelLayout.setVerticalGroup(
+            BolaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BolaPanelLayout.createSequentialGroup()
+                .addGap(67, 67, 67)
+                .addGroup(BolaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextJariBola, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel32))
+                .addGap(38, 38, 38)
+                .addGroup(BolaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(BolaPanelLayout.createSequentialGroup()
+                        .addComponent(jTextKPPris3)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel33))
+                    .addGroup(BolaPanelLayout.createSequentialGroup()
+                        .addComponent(jTextVolBola, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextLPBola, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(269, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(BolaPanel, "card10");
+
+        TabungPanel.setBackground(new java.awt.Color(255, 204, 204));
+
+        jTextJariTabung.setText("0");
+
+        jLabel27.setForeground(new java.awt.Color(102, 102, 255));
+        jLabel27.setText("Jari");
+
+        jLabel28.setForeground(new java.awt.Color(102, 102, 255));
+        jLabel28.setText("Tinggi");
+
+        jTextTinggiTabung.setText("0");
+        jTextTinggiTabung.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextTinggiTabungActionPerformed(evt);
+            }
+        });
+
+        jTextKPPris2.setForeground(new java.awt.Color(0, 102, 102));
+        jTextKPPris2.setText("Volume");
+
+        jTextVolTabung.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextVolTabungActionPerformed(evt);
+            }
+        });
+
+        jLabel30.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel30.setText("Luas permukaan");
+
+        javax.swing.GroupLayout TabungPanelLayout = new javax.swing.GroupLayout(TabungPanel);
+        TabungPanel.setLayout(TabungPanelLayout);
+        TabungPanelLayout.setHorizontalGroup(
+            TabungPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TabungPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(TabungPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(TabungPanelLayout.createSequentialGroup()
+                        .addComponent(jTextJariTabung, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel27))
+                    .addGroup(TabungPanelLayout.createSequentialGroup()
+                        .addComponent(jTextTinggiTabung, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel28))
+                    .addGroup(TabungPanelLayout.createSequentialGroup()
+                        .addGroup(TabungPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextVolTabung, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextLPTabung, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(TabungPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel30)
+                            .addComponent(jTextKPPris2))))
+                .addContainerGap(292, Short.MAX_VALUE))
+        );
+        TabungPanelLayout.setVerticalGroup(
+            TabungPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TabungPanelLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addGroup(TabungPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextJariTabung, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel27))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(TabungPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextTinggiTabung, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel28))
+                .addGap(61, 61, 61)
+                .addGroup(TabungPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(TabungPanelLayout.createSequentialGroup()
+                        .addComponent(jTextKPPris2)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel30))
+                    .addGroup(TabungPanelLayout.createSequentialGroup()
+                        .addComponent(jTextVolTabung, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextLPTabung, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(269, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(TabungPanel, "card11");
+
+        LimastigaPanel.setBackground(new java.awt.Color(153, 204, 0));
+
+        jTextAlasLimastiga.setText("0");
+
+        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel29.setText("Alas");
+
+        jLabel31.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel31.setText("Tinggi");
+
+        jTextTinggiLimastiga.setText("0");
+        jTextTinggiLimastiga.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextTinggiLimastigaActionPerformed(evt);
+            }
+        });
+
+        jTextLALimastiga.setText("0");
+
+        jLabel37.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel37.setText("Luas alas");
+
+        jTextKPPris5.setForeground(new java.awt.Color(255, 255, 255));
+        jTextKPPris5.setText("Volume");
+
+        jLabel38.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel38.setText("Luas permukaan");
+
+        jTextLTLimastiga.setText("0");
+
+        jLabel39.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel39.setText("Luas segitiga");
+
+        javax.swing.GroupLayout LimastigaPanelLayout = new javax.swing.GroupLayout(LimastigaPanel);
+        LimastigaPanel.setLayout(LimastigaPanelLayout);
+        LimastigaPanelLayout.setHorizontalGroup(
+            LimastigaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(LimastigaPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(LimastigaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(LimastigaPanelLayout.createSequentialGroup()
+                        .addComponent(jTextAlasLimastiga, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel29))
+                    .addGroup(LimastigaPanelLayout.createSequentialGroup()
+                        .addComponent(jTextTinggiLimastiga, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel31))
+                    .addGroup(LimastigaPanelLayout.createSequentialGroup()
+                        .addComponent(jTextLALimastiga, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel37))
+                    .addGroup(LimastigaPanelLayout.createSequentialGroup()
+                        .addGroup(LimastigaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextVolLimastiga, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextLPLimastiga, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(LimastigaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel38)
+                            .addComponent(jTextKPPris5)))
+                    .addGroup(LimastigaPanelLayout.createSequentialGroup()
+                        .addComponent(jTextLTLimastiga, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel39)))
+                .addContainerGap(292, Short.MAX_VALUE))
+        );
+        LimastigaPanelLayout.setVerticalGroup(
+            LimastigaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(LimastigaPanelLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addGroup(LimastigaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextAlasLimastiga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel29))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(LimastigaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextTinggiLimastiga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel31))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(LimastigaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextLALimastiga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel37))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(LimastigaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextLTLimastiga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel39))
+                .addGap(12, 12, 12)
+                .addGroup(LimastigaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(LimastigaPanelLayout.createSequentialGroup()
+                        .addComponent(jTextKPPris5)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel38))
+                    .addGroup(LimastigaPanelLayout.createSequentialGroup()
+                        .addComponent(jTextVolLimastiga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextLPLimastiga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(266, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(LimastigaPanel, "card12");
+
+        LimasempatPanel.setBackground(new java.awt.Color(0, 255, 153));
+
+        jTextAlasLimasempat.setText("0");
+
+        jLabel40.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel40.setText("Alas");
+
+        jLabel41.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel41.setText("Tinggi");
+
+        jTextTinggiLimasempat.setText("0");
+        jTextTinggiLimasempat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextTinggiLimasempatActionPerformed(evt);
+            }
+        });
+
+        jTextLALimasempat.setText("0");
+
+        jLabel42.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel42.setText("Luas alas");
+
+        jTextKPPris6.setForeground(new java.awt.Color(255, 255, 255));
+        jTextKPPris6.setText("Volume");
+
+        jLabel43.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel43.setText("Luas permukaan");
+
+        jTextLTLimasempat.setText("0");
+
+        jLabel44.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel44.setText("Luas segitiga");
+
+        javax.swing.GroupLayout LimasempatPanelLayout = new javax.swing.GroupLayout(LimasempatPanel);
+        LimasempatPanel.setLayout(LimasempatPanelLayout);
+        LimasempatPanelLayout.setHorizontalGroup(
+            LimasempatPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(LimasempatPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(LimasempatPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(LimasempatPanelLayout.createSequentialGroup()
+                        .addComponent(jTextAlasLimasempat, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel40))
+                    .addGroup(LimasempatPanelLayout.createSequentialGroup()
+                        .addComponent(jTextTinggiLimasempat, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel41))
+                    .addGroup(LimasempatPanelLayout.createSequentialGroup()
+                        .addComponent(jTextLALimasempat, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel42))
+                    .addGroup(LimasempatPanelLayout.createSequentialGroup()
+                        .addGroup(LimasempatPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextVolLimasempat, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextLPLimasempat, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(LimasempatPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel43)
+                            .addComponent(jTextKPPris6)))
+                    .addGroup(LimasempatPanelLayout.createSequentialGroup()
+                        .addComponent(jTextLTLimasempat, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel44)))
+                .addContainerGap(292, Short.MAX_VALUE))
+        );
+        LimasempatPanelLayout.setVerticalGroup(
+            LimasempatPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(LimasempatPanelLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addGroup(LimasempatPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextAlasLimasempat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel40))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(LimasempatPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextTinggiLimasempat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel41))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(LimasempatPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextLALimasempat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel42))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(LimasempatPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextLTLimasempat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel44))
+                .addGap(12, 12, 12)
+                .addGroup(LimasempatPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(LimasempatPanelLayout.createSequentialGroup()
+                        .addComponent(jTextKPPris6)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel43))
+                    .addGroup(LimasempatPanelLayout.createSequentialGroup()
+                        .addComponent(jTextVolLimasempat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextLPLimasempat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(266, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(LimasempatPanel, "card13");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -706,6 +1291,8 @@ public class FrameNyoba extends javax.swing.JFrame {
         MainPanel.revalidate();
         
         if (jButtonPersegi.isFocusOwner()==true) {
+            jTextLPersegi.setEditable(false);
+            jTextKPersegi.setEditable(false);
             jTextJari.setText("0");
             jTextAlas.setText("0");
             jTextAlasjj.setText("0");
@@ -729,6 +1316,8 @@ public class FrameNyoba extends javax.swing.JFrame {
         MainPanel.revalidate();
         
         if (jButtonLingkaran.isFocusOwner()==true) {
+            jTextLlingkaran.setEditable(false);
+            jTextKlingkaran.setEditable(false);
             jTextLebar.setText("0");
             jTextPanjang.setText("0");
             jTextAlas.setText("0");
@@ -748,6 +1337,7 @@ public class FrameNyoba extends javax.swing.JFrame {
         panjang = Float.valueOf(jTextPanjang.getText());
         jari = Float.valueOf(jTextJari.getText());
         alas = Float.valueOf(jTextAlas.getText());
+        
         tinggi = Float.valueOf(jTextTinggi.getText());
         float sismir = Float.valueOf(jTextSismir.getText());
         float alasjj = Float.valueOf(jTextAlasjj.getText());
@@ -766,8 +1356,6 @@ public class FrameNyoba extends javax.swing.JFrame {
         jTextKsegitiga.setText(String.valueOf(Bangun.Ksegitiga(alas, sismir)));
         jTextKLuasjj.setText(String.valueOf(Bangun.Ljajar(alasjj, tinggijj)));
         jTextLKlilingjj.setText(String.valueOf(Bangun.Kjajar(alasjj, sismirjj)));
-        
-        
         
     }//GEN-LAST:event_jButtonHitungduaActionPerformed
 
@@ -793,7 +1381,9 @@ public class FrameNyoba extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
         
-        if (jButtonLingkaran.isFocusOwner()==true) {
+        if (jButtonSegitiga.isFocusOwner()==true) {
+            jTextLsegitiga.setEditable(false);
+            jTextKsegitiga.setEditable(false);
             jTextLebar.setText("0");
             jTextPanjang.setText("0");
             jTextJari.setText("0");
@@ -813,7 +1403,9 @@ public class FrameNyoba extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
         
-        if (jButtonLingkaran.isFocusOwner()==true) {
+        if (jButtonJajar.isFocusOwner()==true) {
+            jTextKLuasjj.setEditable(false);
+            jTextLKlilingjj.setEditable(false);
             jTextLebar.setText("0");
             jTextPanjang.setText("0");
             jTextAlas.setText("0");
@@ -826,31 +1418,342 @@ public class FrameNyoba extends javax.swing.JFrame {
 
     private void jButtonPrismaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPrismaActionPerformed
         // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+        
+        MainPanel.add(PrismaPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+        
+        if (jButtonPrisma.isFocusOwner()==true) {
+            jTextVolPris.setEditable(false);
+            jTextLPPris.setEditable(false);
+            
+            jTextTinggiBalok.setText("0");
+            jTextPanjangBalok.setText("0");
+            jTextLebarBalok.setText("0");
+            
+            jTextJariTabung.setText("0");
+            jTextTinggiTabung.setText("0");
+            
+            jTextJariBola.setText("0");
+            
+            jTextJariKerucut.setText("0");
+            jTextTinggiKerucut.setText("0");
+            
+            jTextAlasLimasempat.setText("0");
+            jTextTinggiLimasempat.setText("0");
+            jTextLALimasempat.setText("0");
+            jTextLTLimasempat.setText("0");
+            
+            jTextAlasLimastiga.setText("0");
+            jTextTinggiLimastiga.setText("0");
+            jTextLALimastiga.setText("0");
+            jTextLTLimastiga.setText("0");
+            
     }//GEN-LAST:event_jButtonPrismaActionPerformed
-
+    }
     private void jButtonBalokActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBalokActionPerformed
         // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+        
+        MainPanel.add(BalokPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+        
+        if (jButtonBalok.isFocusOwner()==true) {
+            jTextVolBalok.setEditable(false);
+            jTextLPBalok.setEditable(false);
+            
+            jTextAlasPris.setText("0");
+            jTextSismirPris.setText("0");
+            jTextTinggiPris.setText("0");
+            
+            jTextJariTabung.setText("0");
+            jTextTinggiTabung.setText("0");
+            
+            jTextJariBola.setText("0");
+            
+            jTextJariKerucut.setText("0");
+            jTextTinggiKerucut.setText("0");
+            
+            jTextAlasLimasempat.setText("0");
+            jTextTinggiLimasempat.setText("0");
+            jTextLALimasempat.setText("0");
+            jTextLTLimasempat.setText("0");
+            
+            jTextAlasLimastiga.setText("0");
+            jTextTinggiLimastiga.setText("0");
+            jTextLALimastiga.setText("0");
+            jTextLTLimastiga.setText("0");
+            
+        }
     }//GEN-LAST:event_jButtonBalokActionPerformed
 
     private void jButtonKerucutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonKerucutActionPerformed
         // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+        
+        MainPanel.add(KerucutPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+        
+        if (jButtonKerucut.isFocusOwner()==true) {
+            jTextLPKerucut.setEditable(false);
+            jTextVolKerucut.setEditable(false);
+            
+            jTextLebarBalok.setText("0");
+            jTextPanjangBalok.setText("0");
+            jTextTinggiBalok.setText("0");
+            
+            jTextAlasPris.setText("0");
+            jTextSismirPris.setText("0");
+            jTextTinggiPris.setText("0");
+            
+            jTextJariBola.setText("0");
+            
+            jTextJariTabung.setText("0");
+            jTextTinggiTabung.setText("0");
+            
+            jTextAlasLimasempat.setText("0");
+            jTextTinggiLimasempat.setText("0");
+            jTextLALimasempat.setText("0");
+            jTextLTLimasempat.setText("0");
+            
+            jTextAlasLimastiga.setText("0");
+            jTextTinggiLimastiga.setText("0");
+            jTextLALimastiga.setText("0");
+            jTextLTLimastiga.setText("0");
+            
+        }
     }//GEN-LAST:event_jButtonKerucutActionPerformed
 
     private void jButtonBolaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBolaActionPerformed
         // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+        
+        MainPanel.add(BolaPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+        
+        if (jButtonBola.isFocusOwner()==true) {
+            jTextLPBola.setEditable(false);
+            jTextVolBola.setEditable(false);
+            
+            jTextLebarBalok.setText("0");
+            jTextPanjangBalok.setText("0");
+            jTextTinggiBalok.setText("0");
+            
+            jTextAlasPris.setText("0");
+            jTextSismirPris.setText("0");
+            jTextTinggiPris.setText("0");
+            
+            jTextJariKerucut.setText("0");
+            jTextTinggiKerucut.setText("0");
+            
+            jTextJariTabung.setText("0");
+            jTextTinggiTabung.setText("0");
+            
+            jTextAlasLimasempat.setText("0");
+            jTextTinggiLimasempat.setText("0");
+            jTextLALimasempat.setText("0");
+            jTextLTLimasempat.setText("0");
+            
+            jTextAlasLimastiga.setText("0");
+            jTextTinggiLimastiga.setText("0");
+            jTextLALimastiga.setText("0");
+            jTextLTLimastiga.setText("0");
+            
+        }
     }//GEN-LAST:event_jButtonBolaActionPerformed
 
     private void jButtonTabungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTabungActionPerformed
         // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+        
+        MainPanel.add(TabungPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+        
+        if (jButtonTabung.isFocusOwner()==true) {
+            jTextVolTabung.setEditable(false);
+            jTextVolTabung.setEditable(false);
+            
+            jTextLebarBalok.setText("0");
+            jTextPanjangBalok.setText("0");
+            jTextTinggiBalok.setText("0");
+            
+            jTextAlasPris.setText("0");
+            jTextSismirPris.setText("0");
+            jTextTinggiPris.setText("0");
+            
+            jTextJariKerucut.setText("0");
+            jTextTinggiKerucut.setText("0");
+            
+            jTextJariBola.setText("0");
+            
+            jTextAlasLimasempat.setText("0");
+            jTextTinggiLimasempat.setText("0");
+            jTextLALimasempat.setText("0");
+            jTextLTLimasempat.setText("0");
+            
+            jTextAlasLimastiga.setText("0");
+            jTextTinggiLimastiga.setText("0");
+            jTextLALimastiga.setText("0");
+            jTextLTLimastiga.setText("0");   
+        }
     }//GEN-LAST:event_jButtonTabungActionPerformed
 
     private void jButtonLimastigaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimastigaActionPerformed
         // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+        
+        MainPanel.add(LimastigaPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+        
+        if (jButtonLimastiga.isFocusOwner()==true) {
+            jTextVolLimastiga.setEditable(false);
+            jTextLPLimastiga.setEditable(false);
+            
+            jTextLebarBalok.setText("0");
+            jTextPanjangBalok.setText("0");
+            jTextTinggiBalok.setText("0");
+            
+            jTextAlasPris.setText("0");
+            jTextSismirPris.setText("0");
+            jTextTinggiPris.setText("0");
+            
+            jTextJariKerucut.setText("0");
+            jTextTinggiKerucut.setText("0");
+            
+            jTextJariBola.setText("0");
+            
+            jTextAlasLimasempat.setText("0");
+            jTextTinggiLimasempat.setText("0");
+            jTextLALimasempat.setText("0");
+            jTextLTLimasempat.setText("0");
+            
+            jTextJariTabung.setText("0");
+            jTextTinggiTabung.setText("0");   
+        }
     }//GEN-LAST:event_jButtonLimastigaActionPerformed
 
     private void jButtonLimasempatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimasempatActionPerformed
         // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+        
+        MainPanel.add(LimasempatPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+        
+        if (jButtonLimasempat.isFocusOwner()==true) {
+            jTextVolLimasempat.setEditable(false);
+            jTextLPLimasempat.setEditable(false);
+            
+            jTextLebarBalok.setText("0");
+            jTextPanjangBalok.setText("0");
+            jTextTinggiBalok.setText("0");
+            
+            jTextAlasPris.setText("0");
+            jTextSismirPris.setText("0");
+            jTextTinggiPris.setText("0");
+            
+            jTextJariKerucut.setText("0");
+            jTextTinggiKerucut.setText("0");
+            
+            jTextJariBola.setText("0");
+            
+            jTextAlasLimastiga.setText("0");
+            jTextTinggiLimastiga.setText("0");
+            jTextLALimastiga.setText("0");
+            jTextLTLimastiga.setText("0");
+            
+            jTextJariTabung.setText("0");
+            jTextTinggiTabung.setText("0");   
+        }
     }//GEN-LAST:event_jButtonLimasempatActionPerformed
+
+    private void jTextTinggiPrisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextTinggiPrisActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextTinggiPrisActionPerformed
+
+    private void jButtonHitungtigaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonHitungtigaActionPerformed
+        // TODO add your handling code here:
+        float alasPris = Float.valueOf(jTextAlasPris.getText());
+        float tinggiPris = Float.valueOf(jTextTinggiPris.getText());
+        float sismirPris = Float.valueOf(jTextSismirPris.getText());
+        float tinggiBal = Float.valueOf(jTextTinggiBalok.getText());
+        float panjangBal = Float.valueOf(jTextPanjangBalok.getText());
+        float lebarBal = Float.valueOf(jTextLebarBalok.getText());
+        float jariTabung = Float.valueOf(jTextJariTabung.getText());
+        float tinggiTabung = Float.valueOf(jTextTinggiTabung.getText());
+        float jariBola = Float.valueOf(jTextJariBola.getText());
+        float jariKerucut = Float.valueOf(jTextJariKerucut.getText());
+        float tinggiKerucut = Float.valueOf(jTextTinggiKerucut.getText());
+        
+        float alasLimastiga = Float.valueOf(jTextAlasLimastiga.getText());
+        float tinggiLimastiga = Float.valueOf(jTextTinggiLimastiga.getText());
+        float LAlimastiga = Float.valueOf(jTextLALimastiga.getText());
+        float LTlimastiga = Float.valueOf(jTextLTLimastiga.getText());
+        
+        float alasLimasempat = Float.valueOf(jTextAlasLimasempat.getText());
+        float tinggiLimasempat = Float.valueOf(jTextTinggiLimasempat.getText());
+        float LAlimasempat = Float.valueOf(jTextLALimasempat.getText());
+        float LTlimasempat = Float.valueOf(jTextLTLimasempat.getText());
+        
+        bangun Bangun = new bangun();
+        
+        jTextVolPris.setText(String.valueOf(Bangun.volPrismaSegitiga(alasPris, tinggiPris, sismirPris)));
+        jTextLPPris.setText(String.valueOf(Bangun.lpPrismaSegitiga(alasPris, sismirPris, sismirPris, tinggiPris)));
+        jTextVolBalok.setText(String.valueOf(Bangun.volBalok(tinggiBal, lebarBal, panjangBal)));
+        jTextLPBalok.setText(String.valueOf(Bangun.lpBalok(tinggiBal, lebarBal, panjangBal)));
+        jTextVolTabung.setText(String.valueOf(Bangun.volTabung(jariTabung, tinggiTabung)));
+        jTextLPTabung.setText(String.valueOf(Bangun.lpTabung(jariTabung, tinggiTabung)));
+        jTextVolBola.setText(String.valueOf(Bangun.volBola(jariBola)));
+        jTextLPBola.setText(String.valueOf(Bangun.lpBola(jariBola)));
+        jTextVolKerucut.setText(String.valueOf(Bangun.volKerucut(jariKerucut, tinggiKerucut)));
+        jTextLPKerucut.setText(String.valueOf(Bangun.lpKerucut(jariKerucut, tinggiKerucut)));
+        jTextVolLimastiga.setText(String.valueOf(Bangun.volLimas(alasLimastiga, tinggiLimastiga)));
+        jTextLPLimastiga.setText(String.valueOf(Bangun.lpLimas(LAlimastiga, LTlimastiga)));
+        jTextVolLimasempat.setText(String.valueOf(Bangun.volLimas(alasLimasempat, tinggiLimasempat)));
+        jTextLPLimasempat.setText(String.valueOf(Bangun.lpLimas(LAlimasempat, LTlimasempat)));
+        
+    }//GEN-LAST:event_jButtonHitungtigaActionPerformed
+
+    private void jTextTinggiBalokActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextTinggiBalokActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jTextTinggiBalokActionPerformed
+
+    private void jTextTinggiTabungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextTinggiTabungActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextTinggiTabungActionPerformed
+
+    private void jTextVolTabungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextVolTabungActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextVolTabungActionPerformed
+
+    private void jTextTinggiLimastigaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextTinggiLimastigaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextTinggiLimastigaActionPerformed
+
+    private void jTextTinggiLimasempatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextTinggiLimasempatActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextTinggiLimasempatActionPerformed
 
     /**
      * @param args the command line arguments
@@ -888,13 +1791,19 @@ public class FrameNyoba extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel BalokPanel;
+    private javax.swing.JPanel BolaPanel;
     private javax.swing.JPanel JajarPanel;
+    private javax.swing.JPanel KerucutPanel;
+    private javax.swing.JPanel LimasempatPanel;
+    private javax.swing.JPanel LimastigaPanel;
     private javax.swing.JPanel LingkaranPanel;
     private javax.swing.JPanel MainPanel;
     private javax.swing.JPanel MenuPanel;
     private javax.swing.JPanel PersegiPanel;
     private javax.swing.JPanel PrismaPanel;
     private javax.swing.JPanel SegitigaPanel;
+    private javax.swing.JPanel TabungPanel;
     private javax.swing.JButton jButtonBalok;
     private javax.swing.JButton jButtonBola;
     private javax.swing.JButton jButtonHitungdua;
@@ -925,8 +1834,29 @@ public class FrameNyoba extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -934,26 +1864,61 @@ public class FrameNyoba extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanelHome;
     private javax.swing.JTextField jTextAlas;
+    private javax.swing.JTextField jTextAlasLimasempat;
+    private javax.swing.JTextField jTextAlasLimastiga;
+    private javax.swing.JTextField jTextAlasPris;
     private javax.swing.JTextField jTextAlasjj;
-    private javax.swing.JTextField jTextAlasjj1;
     private javax.swing.JTextField jTextJari;
+    private javax.swing.JTextField jTextJariBola;
+    private javax.swing.JTextField jTextJariKerucut;
+    private javax.swing.JTextField jTextJariTabung;
     private javax.swing.JTextField jTextKLuasjj;
-    private javax.swing.JTextField jTextKLuasjj1;
+    private javax.swing.JLabel jTextKPPris;
+    private javax.swing.JLabel jTextKPPris1;
+    private javax.swing.JLabel jTextKPPris2;
+    private javax.swing.JLabel jTextKPPris3;
+    private javax.swing.JLabel jTextKPPris4;
+    private javax.swing.JLabel jTextKPPris5;
+    private javax.swing.JLabel jTextKPPris6;
     private javax.swing.JTextField jTextKPersegi;
     private javax.swing.JTextField jTextKlingkaran;
     private javax.swing.JTextField jTextKsegitiga;
+    private javax.swing.JTextField jTextLALimasempat;
+    private javax.swing.JTextField jTextLALimastiga;
     private javax.swing.JTextField jTextLKlilingjj;
-    private javax.swing.JTextField jTextLKlilingjj1;
+    private javax.swing.JTextField jTextLPBalok;
+    private javax.swing.JTextField jTextLPBola;
+    private javax.swing.JTextField jTextLPKerucut;
+    private javax.swing.JTextField jTextLPLimasempat;
+    private javax.swing.JTextField jTextLPLimastiga;
+    private javax.swing.JTextField jTextLPPris;
+    private javax.swing.JTextField jTextLPTabung;
     private javax.swing.JTextField jTextLPersegi;
+    private javax.swing.JTextField jTextLTLimasempat;
+    private javax.swing.JTextField jTextLTLimastiga;
     private javax.swing.JTextField jTextLebar;
+    private javax.swing.JTextField jTextLebarBalok;
     private javax.swing.JTextField jTextLlingkaran;
     private javax.swing.JTextField jTextLsegitiga;
     private javax.swing.JTextField jTextPanjang;
+    private javax.swing.JTextField jTextPanjangBalok;
     private javax.swing.JTextField jTextSismir;
+    private javax.swing.JTextField jTextSismirPris;
     private javax.swing.JTextField jTextSismirjj;
-    private javax.swing.JTextField jTextSismirjj1;
     private javax.swing.JTextField jTextTinggi;
+    private javax.swing.JTextField jTextTinggiBalok;
+    private javax.swing.JTextField jTextTinggiKerucut;
+    private javax.swing.JTextField jTextTinggiLimasempat;
+    private javax.swing.JTextField jTextTinggiLimastiga;
+    private javax.swing.JTextField jTextTinggiPris;
+    private javax.swing.JTextField jTextTinggiTabung;
     private javax.swing.JTextField jTextTinggijj;
-    private javax.swing.JTextField jTextTinggijj1;
+    private javax.swing.JTextField jTextVolBalok;
+    private javax.swing.JTextField jTextVolBola;
+    private javax.swing.JTextField jTextVolKerucut;
+    private javax.swing.JTextField jTextVolLimasempat;
+    private javax.swing.JTextField jTextVolLimastiga;
+    private javax.swing.JTextField jTextVolPris;
+    private javax.swing.JTextField jTextVolTabung;
     // End of variables declaration//GEN-END:variables
 }

@@ -152,6 +152,11 @@ public class UASFrame extends javax.swing.JFrame {
         jLabel10.setText("Uang Akhir");
 
         jButton4.setText(" Uang Akhir");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -183,10 +188,10 @@ public class UASFrame extends javax.swing.JFrame {
                                     .addComponent(JumlahBarang2, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(JumlahBarang1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(TotalHarga1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(TotalHarga2, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(TotalHarga3, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(TotalHarga1, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE)
+                            .addComponent(TotalHarga2)
+                            .addComponent(TotalHarga3)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -195,7 +200,7 @@ public class UASFrame extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(12, 12, 12)
                                 .addComponent(jLabel3)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 124, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -206,14 +211,13 @@ public class UASFrame extends javax.swing.JFrame {
                                     .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(HargaDiskon1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(HargaDiskon2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(HargaDiskon3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel5))
-                                .addGap(67, 67, 67)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(HargaDiskon2, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(HargaDiskon1, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
+                                        .addComponent(jLabel5)
+                                        .addComponent(HargaDiskon3)))
+                                .addGap(54, 54, 54)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(TotPembayaran, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Diskon5Jika, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -225,8 +229,9 @@ public class UASFrame extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jButton4)
-                            .addComponent(jButtonTotal))))
-                .addGap(113, 113, 113))
+                            .addComponent(jButtonTotal))
+                        .addGap(31, 31, 31)))
+                .addGap(82, 82, 82))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -360,21 +365,22 @@ public class UASFrame extends javax.swing.JFrame {
         float jumlahbrg1 = Float.valueOf(JumlahBarang1.getText());
         float jumlahbrg2 = Float.valueOf(JumlahBarang2.getText());
         float jumlahbrg3 = Float.valueOf(JumlahBarang3.getText());
-        float TotHrg1,TotHrg2,TotHrg3;
-        float diskon1,diskon2,diskon3;
+        float TotHrg1 = 0,TotHrg2 = 0,TotHrg3 = 0;
+        float diskon1 = 0,diskon2 = 0,diskon3 = 0;
         
         if (jumlahbrg1>50) {
             diskon1 = (jumlahbrg1*25000)/100;
             HargaDiskon1.setText(String.valueOf(diskon1));
             TotHrg1 = (jumlahbrg1*25000)-diskon1;
             TotalHarga1.setText(String.valueOf(TotHrg1));
+        }
             
-            
-            if (jumlahbrg1<=50){
+         if (jumlahbrg1<=50){
                 diskon1 = (jumlahbrg1*25000)*0;
                 HargaDiskon1.setText(String.valueOf(diskon1));
                 TotHrg1 = (jumlahbrg1*25000)-diskon1;
                 TotalHarga1.setText(String.valueOf(TotHrg1));
+            
             }
             
             if (jumlahbrg2>50) {
@@ -382,39 +388,44 @@ public class UASFrame extends javax.swing.JFrame {
                 HargaDiskon2.setText(String.valueOf(diskon2));
                 TotHrg2 = (jumlahbrg1*25000)-diskon2;
                 TotalHarga2.setText(String.valueOf(TotHrg2));
-                
-                if (jumlahbrg2<=50) {
+            }
+            if (jumlahbrg2<=50) {
                 diskon2 = (jumlahbrg2*50000)*0;
                 HargaDiskon2.setText(String.valueOf(diskon2));
                 TotHrg2 = (jumlahbrg2*50000)-diskon2;
                 TotalHarga2.setText(String.valueOf(TotHrg2));
-            }
+                }
                 
-                if (jumlahbrg3>50) {
+            if (jumlahbrg3>50) {
                     diskon3 = (jumlahbrg3*75000)/100;
                 HargaDiskon3.setText(String.valueOf(diskon3));
                 TotHrg3 = (jumlahbrg3*75000)-diskon3;
                 TotalHarga3.setText(String.valueOf(TotHrg3));
+                }
                 
-                if (jumlahbrg3<=50) {
+            if (jumlahbrg3<=50) {
                 diskon3 = (jumlahbrg3*75000)*0;
                 HargaDiskon3.setText(String.valueOf(diskon3));
                 TotHrg3 = (jumlahbrg3*75000)-diskon3;
                 TotalHarga3.setText(String.valueOf(TotHrg3));
-                TotPembayaran.setText(String.valueOf(TotHrg1+TotHrg2+TotHrg3));
-            }
+                
                 }
-            }
-            TotalHarga1.setText(String.valueOf(25000*jumlahbrg1));
-            TotalHarga2.setText(String.valueOf(50000*jumlahbrg2));
-            TotalHarga3.setText(String.valueOf(75000*jumlahbrg3));
-            
-            
-            TotPembayaran.setText(String.valueOf((25000*jumlahbrg1)+(50000*jumlahbrg2)+(75000*jumlahbrg3)));
+            TotPembayaran.setText(String.valueOf(TotHrg1+TotHrg2+TotHrg3));
+        if ((TotHrg1+TotHrg2+TotHrg3)>5000000) {
+            float totals = TotHrg1+TotHrg2+TotHrg3;
+            float Diskon = (totals * 5)/100;
+            Diskon5Jika.setText(String.valueOf(Diskon));
+            float hrgStlhDisk = totals - Diskon;
+            PemayaranStlhdiskon.setText(String.valueOf(hrgStlhDisk));
         }
         
         
     }//GEN-LAST:event_jButtonTotalActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
